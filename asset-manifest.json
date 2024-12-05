@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1c74137b.css",
+    "main.js": "/static/js/main.32561a70.js",
+    "static/media/Background.jpg": "/static/media/Background.5fac167468862ebc0656.jpg",
+    "static/media/Photo_Info.png": "/static/media/Photo_Info.c2a480f111ad0fdb87f5.png",
+    "static/media/Logo.svg": "/static/media/Logo.e3b7dfb3c00324cfc45919942cca5ca5.svg",
+    "static/media/Title_Home.svg": "/static/media/Title_Home.911a97cb7e2b0dffe75a9ebce9e449bf.svg",
+    "index.html": "/index.html",
+    "static/media/Image_Contact.svg": "/static/media/Image_Contact.5df08a8db63c010ab77ec6c92c84946b.svg",
+    "static/media/Icon_Chauffage.svg": "/static/media/Icon_Chauffage.9aa5ca68b176c92d1f656b44e1e90058.svg",
+    "static/media/Icon_Depannage.svg": "/static/media/Icon_Depannage.d65432c6f5b3677c30522c8ed2db739b.svg",
+    "static/media/Icon_Sanitaire.svg": "/static/media/Icon_Sanitaire.0e6425d35cade1c79d49df643fd13559.svg",
+    "main.1c74137b.css.map": "/static/css/main.1c74137b.css.map",
+    "main.32561a70.js.map": "/static/js/main.32561a70.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c74137b.css",
+    "static/js/main.32561a70.js"
+  ]
+}

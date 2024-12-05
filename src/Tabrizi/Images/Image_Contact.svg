@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 746.2 695.3">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: .4;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 8px;
+      }
+    </style>
+  </defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <g id="gas_heating1" data-name="gas heating1" class="cls-1">
+      <path class="cls-2" d="M373,602.2v38.2c0,28.1-22.8,50.9-50.9,50.9H67.6v-330.9H4v-76.4L373.1,4l152.7,115.8V42.2h89.1v145.2l127.3,96.6v76.4h-63.6v330.9h-229.1"/>
+      <g>
+        <path class="cls-2" d="M373,602.2c-17.7,0-34.7-2.5-50.9-7.4-73.6-21.9-127.3-90.1-127.3-170.8s30.2-114,76.4-146.2v69.9c0,28.1,22.8,50.9,50.9,50.9s50.9-22.8,50.9-50.9c0-50.9-76.4-127.3,38.2-190.9,0,62.5,73.9,114.8,108.1,165.5,19.6,29.1,31.9,64,31.9,101.8,0,80.7-53.7,148.9-127.3,170.8"/>
+        <path class="cls-2" d="M494.4,462.2c-11.1,35.2-37.1,63.8-70.5,78.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

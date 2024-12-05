@@ -1,0 +1,126 @@
+.contact {
+    width: 100%;
+    height: auto;
+    padding: 150px 0px;
+    background-color: #1A1A1A;
+}
+
+.contact .container {
+    position: relative;
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.contact .container-text {
+    width: 50%;
+}
+
+.contact .container-text h1 {
+    margin-bottom: 50px;
+    font-family: 'Rubik';
+    font-size: 40px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.contact .container-text .container-contact {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact .container-text .input-box {
+    width: 48%;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .container-text .input-box label {
+    font-family: 'Rubik';
+    font-size: 15px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+
+.contact .container-text .input-box input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Rubik';
+    font-size: 15px;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: #575757;
+    outline: none;
+}
+
+.contact .container-text .input-box-message {
+    width: 100%;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .container-text .input-box-message label {
+    font-family: 'Rubik';
+    font-size: 15px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+
+.contact .container-text .input-box-message textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Rubik';
+    font-size: 15px;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: #575757;
+    outline: none;
+    resize: none;
+}
+
+.contact .container-text .container-btn {
+    margin-top: 40px;
+    display: flex;
+    justify-content: end;
+    align-self: center;
+}
+
+.contact .container-text .container-btn button {
+    padding: 7.5px 40px;
+    font-family: 'Rubik';
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: #E32021;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    transition: .3s background-color;
+    cursor: pointer;
+}
+
+.contact .container-text .container-btn button:hover {
+    background-color: #B71C1C;
+}
+
+.contact .container .image {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -150px;
+    width: 700px;
+}
