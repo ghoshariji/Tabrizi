@@ -20,9 +20,7 @@ const Header = () => {
                 </Link>
             </div>
 
-            <button className="menu-button" onClick={toggleMenu}>
-                &#9776; 
-            </button>
+
 
             <div className={`container-header ${menuOpen ? 'active' : ''}`}>
                 <div className="container-info">

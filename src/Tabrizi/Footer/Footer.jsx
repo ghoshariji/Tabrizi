@@ -38,30 +38,6 @@ function Footer() {
                             <li>Dépannage</li>
                         </ul>
                     </div>
-                    <div className='social'>
-                        <h2>NOS RÉSEAUX</h2>
-                        <ul>
-                            <li>
-                                <a 
-                                    href="" 
-                                    target="_blank" 
-                                    rel="noopener noreferrer"
-                                >
-                                    <span><FontAwesomeIcon icon={faFacebook} /></span> Facebook
-                                </a>
-                            </li>
-                            <li>
-                                <a 
-                                    href="" 
-                                    target="_blank" 
-                                    rel="noopener noreferrer"
-                                >
-                                    <span><FontAwesomeIcon icon={faInstagram} /></span> Instagram
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
                     <div className='coord'>
                         <h2>NOUS CONTACTEZ</h2>
                         <ul>
@@ -81,14 +57,29 @@ function Footer() {
                             </li>
                         </ul>
                     </div>
-                    
+                    <div className='social'>
+                        <h2>NOS RÉSEAUX</h2>
+                        <ul>
+                            <li>
+                                <a href="" target="_blank" rel="noopener noreferrer" className="social-link">
+                                    <FontAwesomeIcon icon={faFacebook} className="social-icon" />
+                                    Facebook
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank" rel="noopener noreferrer" className="social-link">
+                                    <FontAwesomeIcon icon={faInstagram} className="social-icon" />
+                                    Instagram
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div className='footer-bottom'>
                     <h3>© 2024 tout droit réservé à AG Sanitaire Sàrl.</h3>
                     <h4><span><FontAwesomeIcon icon={faHammer} /></span> Conçu par LogixMédia</h4>
                 </div>
-                
             </div>
         </footer>
     );
