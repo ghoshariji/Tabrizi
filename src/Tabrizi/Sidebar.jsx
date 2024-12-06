@@ -32,6 +32,9 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           className="flex flex-row items-center gap-4 cursor-pointer"
           onClick={() => scrollToSection("home")}
         >
+            
+
+            
           <span className="text-lg">Nos prestations</span>
         </div>
         <div
