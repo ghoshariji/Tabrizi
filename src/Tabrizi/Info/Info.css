@@ -1,7 +1,7 @@
 .info {
     width: 100%;
     max-width: 1300px;
-    margin: 0px auto 50px auto;
+    margin: 30px auto 50px auto; /* Added margin-top to move the section down */
     height: auto;
 }
 
@@ -9,23 +9,35 @@
     width: 100%;
     height: auto;
     margin-bottom: 180px;
-    padding: 0px 130px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;  /* Ensures the items wrap on smaller screens */
+    gap: 20px; 
+    overflow-x: auto;
+    padding: 0 15px;  /* Adjusts the padding for responsiveness */
 }
 
 .info .container-box .box {
     position: relative;
-    width: 320px;
-    height: 320px;
+    width: 100%;
+    aspect-ratio: 1;  /* Ensures the box remains a square */
+    max-width: 380px; /* Limit the size on larger screens */
     background-color: #1A1A1A;
     border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease; /* Smooth transition for responsive changes */
 }
 
 .info .container-box .box .point {
-    margin-top: 20px;
-    margin-left: 15px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
     font-size: 25px;
 }
 
@@ -66,6 +78,7 @@
     height: auto;
     display: flex;
     flex-direction: row;
+    gap: 20px;
 }
 
 .info .container-info .container-image {
@@ -89,4 +102,118 @@
     font-size: 22px;
     font-weight: 400;
     color: #000000;
+    line-height: 1.6; /* Adjusts line height for better readability */
+    margin: 0 15px; /* Add margin for spacing */
+}
+
+@media (max-width: 768px) {
+    .info {
+        margin: 30px auto 30px auto; /* Added margin-top for smaller screens */
+        padding: 0 15px;
+    }
+
+    .info .container-box {
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info .container-box .box {
+        width: 90%;
+        max-width: none; /* Let it take up full available width */
+        margin: 10px 0;
+        aspect-ratio: 1; /* Keeps the box square */
+    }
+
+    .info .container-box .box h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .info .container-box .box button {
+        font-size: 16px;
+        padding: 8px 20px;
+        margin: 20px 0;
+    }
+    .info .container-info .container-text p {
+        font-size: 20px;  /* Decrease font size for smaller screens */
+        padding: 0 20px; /* Adjust padding for responsiveness */
+        line-height: 1.5; /* Adjust line height */
+    }
+    .info .container-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .info .container-info .container-image,
+    .info .container-info .container-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .info .container-info .container-text {
+        order: -1;
+    }
+
+    .info .container-info .container-text p {
+        font-size: 20px;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 425px) {
+    .info {
+        margin: 30px auto 20px auto; /* Added margin-top for very small screens */
+        padding: 0 10px;
+    }
+    .info .container-info .container-text p {
+        font-size: 18px;  /* Further decrease font size */
+        padding: 0 10px; /* Add some padding to avoid text being too close to edges */
+        line-height: 1.4; /* Adjust line height for small screens */
+    }
+    .info .container-box {
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .info .container-box .box {
+        width: 100%;
+        margin-bottom: 20px;
+        aspect-ratio: 1; /* Keeps the box square */
+    }
+
+    .info .container-box .box h2 {
+        font-size: 20px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .info .container-box .box button {
+        font-size: 14px;
+        padding: 8px 15px;
+        margin: 15px 0;
+    }
+
+    .info .container-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .info .container-info .container-text p {
+        font-size: 18px;
+    }
+
+    .info .container-box .box .point {
+        top: 5px;
+        left: 5px;
+        font-size: 18px;
+    }
 }
