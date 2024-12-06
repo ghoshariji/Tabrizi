@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
@@ -6,6 +6,12 @@ import Logo from '../Images/Logo.svg';
 import './Header.css';
 
 const Header = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
+
     return (
         <header>
             <div className="container-logo">
@@ -14,8 +20,12 @@ const Header = () => {
                 </Link>
             </div>
 
-            <div className="container-header">
-                <div className='container-info'>
+            <button className="menu-button" onClick={toggleMenu}>
+                &#9776; 
+            </button>
+
+            <div className={`container-header ${menuOpen ? 'active' : ''}`}>
+                <div className="container-info">
                     <a href="mailto:info@tabrizisarl.ch">info@tabrizisarl.ch</a>
                     <a href="tel:+41791254646">+41 79 125 46 46</a>
                     <a 
@@ -43,7 +53,7 @@ const Header = () => {
                     </div>
                 </div>
 
-                <ul className='container-navigation'>
+                <ul className="container-navigation">
                     <li>
                         <Link to="/">Accueil</Link>
                     </li>

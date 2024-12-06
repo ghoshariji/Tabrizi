@@ -10,13 +10,11 @@ function Footer() {
     return (
         <footer>
             <div className='container-footer'>
-
                 <div className='footer-top'>
                     <img src={Logo} alt="Logo AG Sanitaire" />
                 </div>
 
                 <div className='footer-center'>
-
                     <div className='link'>
                         <h2>NAVIGATION</h2>
                         <ul>
@@ -40,7 +38,6 @@ function Footer() {
                             <li>Dépannage</li>
                         </ul>
                     </div>
-
                     <div className='social'>
                         <h2>NOS RÉSEAUX</h2>
                         <ul>
@@ -73,7 +70,6 @@ function Footer() {
                                 <a href="https://www.google.com/maps/place/Ch.+du+Petit-Flon+26a,+1052+Le+Mont-sur-Lausanne,+Suisse" target="_blank" rel="noopener noreferrer">
                                     Ch. de Liamont 2<br />1059 Peney-le-Jorat, Suisse
                                 </a>
-
                             </li>
                             <li>
                                 <span><FontAwesomeIcon icon={faPhone} /></span> 
