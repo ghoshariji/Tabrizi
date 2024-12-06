@@ -1,10 +1,19 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
-import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faLocationDot, faPhone, faEnvelope, faHammer } from '@fortawesome/free-solid-svg-icons'; 
-import { Link } from 'react-router-dom';
-import Logo from '../Images/Logo.svg';
-import './Footer.css'; 
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faInstagram,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
+import {
+  faLocationDot,
+  faPhone,
+  faEnvelope,
+  faHammer,
+} from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
+import Logo from "../Images/Logo.svg";
+import "./Footer.css";
 
 function Footer() {
     return (
