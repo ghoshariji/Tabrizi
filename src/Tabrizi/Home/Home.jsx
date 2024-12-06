@@ -28,16 +28,17 @@ const Home = () => {
 
       {/* Button to Open Sidebar (Top-Right Corner) - Only on small screens */}
       <button
-        onClick={toggleSidebar}
-        aria-label={isSidebarOpen ? "Close Sidebar" : "Open Sidebar"}
-        className="fixed top-4 right-4 text-white p-3 mr-5 text-2xl z-50 md:hidden"  // `md:hidden` hides it on medium and larger screens
-      >
-        {isSidebarOpen ? (
-          <FaTimes className="text-2xl mb-5" />
-        ) : (
-          <FaBars className="text-2xl" />
-        )}
-      </button>
+  onClick={toggleSidebar}
+  aria-label={isSidebarOpen ? "Close Sidebar" : "Open Sidebar"}
+  className="fixed top-4 right-4 text-white p-3 text-2xl z-50 md:hidden"
+  style={{ marginRight: '1rem' }}  // Ensure there's space for the button on the right
+>
+  {isSidebarOpen ? (
+    <FaTimes className="text-2xl mb-5" />
+  ) : (
+    <FaBars className="text-2xl" />
+  )}
+</button>
 
       <div className='home'>
         <div className='background-img'>

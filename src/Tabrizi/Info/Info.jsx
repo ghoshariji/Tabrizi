@@ -68,7 +68,7 @@ const Info = () => {
           <img src={Photo_Info} alt="Illustration d'un homme qui discuste" />
         </div>
 
-        <div className="container-text relative text-center md:text-left">
+        <div className="container-text relative text-center md:text-left overflow-hidden">
           {/* Blue Comma */}
           <span className="hidden md:block absolute text-blue-500 text-[10rem] leading-none top-[-30px] left-[-20px] rotate-[10deg]">
             ❝
@@ -79,7 +79,7 @@ const Info = () => {
           </span>
 
           {/* Text */}
-          <p className="text-lg md:text-xl lg:text-2xl px-4 md:px-0 leading-relaxed">
+          <p className="text-lg md:text-xl lg:text-2xl px-4 md:px-0 leading-relaxed overflow-hidden">
             "Chez AG Sanitaire, nous offrons
             <br />
             des solutions de qualité pour vos
