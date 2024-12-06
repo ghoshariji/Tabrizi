@@ -67,11 +67,19 @@ const Info = () => {
         <div className="container-image">
           <img src={Photo_Info} alt="Illustration d'un homme qui discuste" />
         </div>
-        <div className="container-text relative">
-          <span className="absolute text-blue-500 text-8xl top-[-30px] left-[-20px]">
-            ‘‘
+
+        <div className="container-text relative text-center md:text-left">
+          {/* Blue Comma */}
+          <span className="hidden md:block absolute text-blue-500 text-[10rem] leading-none top-[-30px] left-[-20px] rotate-[10deg]">
+            ❝
           </span>
-          <p>
+
+          <span className="block md:hidden text-blue-500 text-[5rem] leading-none mx-auto -mt-8 rotate-[10deg]">
+            ❝
+          </span>
+
+          {/* Text */}
+          <p className="text-lg md:text-xl lg:text-2xl px-4 md:px-0 leading-relaxed">
             "Chez AG Sanitaire, nous offrons
             <br />
             des solutions de qualité pour vos
@@ -88,8 +96,14 @@ const Info = () => {
             pour un confort durable et adapté à<br />
             votre budget."
           </p>
-          <span className="absolute text-red-500 text-8xl bottom-[-30px] right-[-20px]">
-            ’’
+
+          {/* Red Comma */}
+          <span className="hidden md:block absolute text-red-500 text-[10rem] leading-none bottom-[-30px] right-[-20px] rotate-[-10deg]">
+            ❞
+          </span>
+
+          <span className="block md:hidden text-red-500 text-[5rem] leading-none mx-auto mt-4 rotate-[-10deg]">
+            ❞
           </span>
         </div>
       </div>
