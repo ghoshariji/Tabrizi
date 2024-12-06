@@ -170,7 +170,7 @@
     .home {
         height: auto;
         min-height: 400px;
-        top: 0; /* Moves the section down for smaller screens */
+        top: 0; 
     }
 
     .home .background-img img {
