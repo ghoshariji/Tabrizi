@@ -1,6 +1,6 @@
 import React from "react";
 import Image_Contact from "../Images/Image_Contact.svg";
-
+import "./Contact.css"
 const Contact = () => {
   return (
     <section id="contact">
