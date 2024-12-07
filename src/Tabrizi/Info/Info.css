@@ -1,277 +1,462 @@
 .info {
-    width: 100%;
-    max-width: 1300px;
-    margin: 30px auto 50px auto; /* Added margin-top to move the section down */
-    height: auto;
+  width: 100%;
+  max-width: 1300px;
+  margin: 30px auto 50px auto; /* Added margin-top to move the section down */
+  height: auto;
 }
 
 .info .container-box {
-    width: 100%;
-    height: auto;
-    margin-bottom: 180px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;  /* Ensures the items wrap on smaller screens */
-    gap: 20px; 
-    overflow-x: auto;
-    padding: 0 15px;  /* Adjusts the padding for responsiveness */
+  width: 100%;
+  height: auto;
+  margin-bottom: 180px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap; /* Ensures the items wrap on smaller screens */
+  gap: 20px;
+  overflow-x: auto;
+  padding: 0 15px; /* Adjusts the padding for responsiveness */
 }
 
 .info .container-box .box {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 1;  /* Ensures the box remains a square */
-    max-width: 380px; /* Limit the size on larger screens */
-    background-color: #1A1A1A;
-    border-radius: 5px;
-    margin-bottom: 30px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: all 0.3s ease; /* Smooth transition for responsive changes */
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1; /* Ensures the box remains a square */
+  max-width: 380px; /* Limit the size on larger screens */
+  background-color: #1a1a1a;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease; /* Smooth transition for responsive changes */
 }
 
 .info .container-box .box .point {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    font-size: 25px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 25px;
 }
 
 .info .container-box .box h2 {
-    margin-top: 40px;
-    margin-left: 25px;
-    font-family: 'Rubik';
-    font-size: 30px;
-    font-weight: 300;
-    color: #ffffff;
+  margin-top: 40px;
+  margin-left: 25px;
+  font-family: "Rubik";
+  font-size: 30px;
+  font-weight: 300;
+  color: #ffffff;
 }
 
 .info .container-box .box button {
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px 30px;
-    font-family: 'Rubik';
-    font-size: 18px;
-    font-weight: 300;
-    color: #ffffff;
-    border-radius: 5px;
-    border: none;
-    transition: .3s background-color;
-    cursor: pointer;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 30px;
+  font-family: "Rubik";
+  font-size: 18px;
+  font-weight: 300;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  transition: 0.3s background-color;
+  cursor: pointer;
 }
 
 .info .container-box .box img {
-    position: absolute;
-    right: 5px;
-    bottom: 0px;
-    width: 70px;
+  position: absolute;
+  right: 5px;
+  bottom: 0px;
+  width: 70px;
 }
 
 .info .container-info {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 
 .info .container-info .container-image {
-    width: 60%;
+  width: 60%;
 }
 
 .info .container-info .container-image img {
-    width: 90%;
-    height: 90%;
-    object-fit: contain;
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
 }
 
 .info .container-info .container-text {
-    width: 40%;
-    display: flex;
-    align-items: center;
+  width: 40%;
+  display: flex;
+  align-items: center;
 }
 
 .info .container-info .container-text p {
-    font-family: 'Rubik';
-    font-size: 22px;
-    font-weight: 400;
-    color: #000000;
-    line-height: 1.6; /* Adjusts line height for better readability */
-    margin: 0 15px; /* Add margin for spacing */
+  font-family: "Rubik";
+  font-size: 22px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 1.6; /* Adjusts line height for better readability */
+  margin: 0 15px; /* Add margin for spacing */
 }
 
 @media (max-width: 768px) {
-    .info {
-        margin: 30px auto 30px auto; /* Added margin-top for smaller screens */
-        padding: 0 15px;
-    }
+  .info {
+    margin: 30px auto 30px auto; /* Added margin-top for smaller screens */
+    padding: 0 15px;
+  }
 
-    .info .container-box {
-        flex-direction: column;
-        padding: 0;
-        align-items: center;
-        justify-content: center;
-    }
+  .info .container-box {
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .info .container-box .box {
-        width: 90%;
-        max-width: none; /* Let it take up full available width */
-        margin: 10px 0;
-        aspect-ratio: 1; /* Keeps the box square */
-    }
+  .info .container-box .box {
+    width: 90%;
+    max-width: none; /* Let it take up full available width */
+    margin: 10px 0;
+    aspect-ratio: 1; /* Keeps the box square */
+  }
 
-    .info .container-box .box h2 {
-        font-size: 24px;
-        text-align: center;
-    }
+  .info .container-box .box h2 {
+    font-size: 24px;
+    text-align: center;
+  }
 
-    .info .container-box .box button {
-        font-size: 16px;
-        padding: 8px 20px;
-        margin: 20px 0;
-    }
-    .info .container-info .container-text p {
-        font-size: 20px;  /* Decrease font size for smaller screens */
-        padding: 0 20px; /* Adjust padding for responsiveness */
-        line-height: 1.5; /* Adjust line height */
-    }
-    .info .container-info {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+  .info .container-box .box button {
+    font-size: 16px;
+    padding: 8px 20px;
+    margin: 20px 0;
+  }
+  .info .container-info .container-text p {
+    font-size: 20px; /* Decrease font size for smaller screens */
+    padding: 0 20px; /* Adjust padding for responsiveness */
+    line-height: 1.5; /* Adjust line height */
+  }
+  .info .container-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-    .info .container-info .container-image,
-    .info .container-info .container-text {
-        width: 100%;
-        text-align: center;
-    }
+  .info .container-info .container-image,
+  .info .container-info .container-text {
+    width: 100%;
+    text-align: center;
+  }
 
-    .info .container-info .container-text {
-        order: -1;
-    }
+  .info .container-info .container-text {
+    order: -1;
+  }
 
-    .info .container-info .container-text p {
-        font-size: 20px;
-        padding: 0 10px;
-    }
+  .info .container-info .container-text p {
+    font-size: 20px;
+    padding: 0 10px;
+  }
 }
 
 @media (max-width: 425px) {
-    .info {
-        margin: 30px auto 20px auto; /* Added margin-top for very small screens */
-        padding: 0 10px;
-    }
-    .info .container-info .container-text p {
-        font-size: 18px;  /* Further decrease font size */
-        padding: 0 10px; /* Add some padding to avoid text being too close to edges */
-        line-height: 1.4; /* Adjust line height for small screens */
-    }
-    .info .container-box {
-        flex-direction: column;
-        padding: 0;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: auto;
-        margin-left: 0;
-    }
+  .info {
+    margin: 30px auto 20px auto; /* Added margin-top for very small screens */
+    padding: 0 10px;
+  }
+  .info .container-info .container-text p {
+    font-size: 18px; /* Further decrease font size */
+    padding: 0 10px; /* Add some padding to avoid text being too close to edges */
+    line-height: 1.4; /* Adjust line height for small screens */
+  }
+  .info .container-box {
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
 
-    .info .container-box .box {
-        width: 100%;
-        margin-bottom: 20px;
-        aspect-ratio: 1; /* Keeps the box square */
-    }
+  .info .container-box .box {
+    width: 100%;
+    margin-bottom: 20px;
+    aspect-ratio: 1; /* Keeps the box square */
+  }
 
-    .info .container-box .box h2 {
-        font-size: 20px;
-        margin-top: 20px;
-        text-align: center;
-    }
+  .info .container-box .box h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+  }
 
-    .info .container-box .box button {
-        font-size: 14px;
-        padding: 8px 15px;
-        margin: 15px 0;
-    }
+  .info .container-box .box button {
+    font-size: 14px;
+    padding: 8px 15px;
+    margin: 15px 0;
+  }
 
-    .info .container-info {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+  .info .container-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-    .info .container-info .container-text p {
-        font-size: 18px;
-    }
+  .info .container-info .container-text p {
+    font-size: 18px;
+  }
 
-    .info .container-box .box .point {
-        top: 5px;
-        left: 5px;
-        font-size: 18px;
-    }
+  .info .container-box .box .point {
+    top: 5px;
+    left: 5px;
+    font-size: 18px;
+  }
 }
 /* Info.css */
 
 /* Apply transition to the blue comma SVG */
 .blue-comma {
-    transition: bottom 1s ease-in-out; /* Smooth transition for the 'bottom' property */
-  }
-  
-  /* Set the initial position of the blue comma */
-  .blue-comma {
-    bottom: -50px; /* Initial position off-screen */
-  }
-  
-  /* Final position on hover or animation */
-  .blue-comma:hover {
-    bottom: -30px; /* Move to the desired position */
-  }
-  /* Info.css */
+  transition: bottom 1s ease-in-out; /* Smooth transition for the 'bottom' property */
+}
+
+/* Set the initial position of the blue comma */
+.blue-comma {
+  bottom: -50px; /* Initial position off-screen */
+}
+
+/* Final position on hover or animation */
+.blue-comma:hover {
+  bottom: -30px; /* Move to the desired position */
+}
+/* Info.css */
 
 /* General styling for the blue comma */
 /* Info.css */
 
 /* General styling for the blue comma */
 .blue-comma {
-    transition: bottom 1s ease-in-out; /* Smooth transition for the 'bottom' property */
-    position: absolute;
-    bottom: -30px; /* Adjust this value as needed for small screens */
-    right: 10px; /* Position on the right side */
-    z-index: 10; /* Ensure it's on top of other elements */
-  }
-  
-  /* Adjust the size for smaller screens */
-  @media (max-width: 768px) {
-    .blue-comma {
-      bottom: 10px; /* Move it up slightly for small screens */
-      right: 10px; /* Keep it to the right */
-      font-size: 4rem; /* Smaller size on small screens */
-    }
-  }
-  
+  transition: bottom 1s ease-in-out; /* Smooth transition for the 'bottom' property */
+  position: absolute;
+  bottom: -30px; /* Adjust this value as needed for small screens */
+  right: 10px; /* Position on the right side */
+  z-index: 10; /* Ensure it's on top of other elements */
+}
+
+/* Adjust the size for smaller screens */
+@media (max-width: 768px) {
   .blue-comma {
+    bottom: 10px; /* Move it up slightly for small screens */
+    right: 10px; /* Keep it to the right */
+    font-size: 4rem; /* Smaller size on small screens */
+  }
+}
+
+.blue-comma {
+  position: absolute;
+  color: #0e3388; /* Tailwind color for blue */
+  font-size: 8rem; /* Small size for the SVG */
+  line-height: 0;
+  bottom: -80px; /* Adjusted value to move it down */
+  right: 15px; /* Move it slightly towards the center */
+  transform: rotate(0deg);
+}
+
+/* For large screens (smaller screen adjustments) */
+@media (max-width: 640px) {
+  .blue-comma {
+    bottom: -20px; /* Adjusted for smaller screens */
+    right: 2%; /* Adjusted for smaller screens */
+    font-size: 5rem; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Base styles for the container and images */
+.container-text {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.container-text img {
+  height: 10%;
+  width: 10%;
+  display: inline-block;
+}
+
+.container-text img.red {
+  margin-bottom: 60%;
+}
+
+.container-text img.blue {
+  margin-top: 55%;
+  margin-right: 3%;
+}
+
+/* Media queries for different screen sizes */
+
+/* For screens below 1024px */
+
+/* Base styles for the container and images */
+.container-text {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.container-text img {
+  height: 10%;
+  width: 10%;
+  display: inline-block;
+}
+
+.container-text img.red {
+  margin-bottom: 60%;
+}
+
+.container-text img.blue {
+  margin-top: 55%;
+  margin-right: 3%;
+}
+
+/* Media queries for different screen sizes */
+
+/* For screens below 1288px */
+@media (max-width: 1288px) {
+  .container-text img {
+    height: 8%;
+    width: 8%;
+  }
+
+  .container-text img.red {
+    margin-bottom: 70%;
+  }
+
+  .container-text img.blue {
+    margin-top: 75%;
+  }
+}
+
+/* For screens below 1150px */
+@media (max-width: 1150px) {
+  .container-text img {
+    height: 8%;
+    width: 8%;
+  }
+
+  .container-text img.red {
+    margin-bottom: 100%;
+  }
+
+  .container-text img.blue {
+    margin-top: 100%;
+  }
+}
+
+/* For screens below 1024px */
+@media (max-width: 1024px) {
+  .container-text img {
+    height: 8%;
+    width: 8%;
+  }
+
+  .container-text img.red {
+    margin-bottom: 120%;
+  }
+
+  .container-text img.blue {
+    margin-top: 100%;
+  }
+}
+
+/* For screens below 850px */
+@media (max-width: 850px) {
+  .container-text img {
+    height: 18%;
+    width: 18%;
+  }
+
+  .container-text img.red {
+    margin-bottom: 140%;
+  }
+
+  .container-text img.blue {
+    margin-top: 150%;
+  }
+}
+
+/* For screens below 780px */
+@media (max-width: 780px) {
+  .container-text img {
+    height: 7%;
+    width: 7%;
+  }
+
+  .container-text img.red {
+    margin-bottom: 40%;
+  }
+
+  .container-text img.blue {
+    margin-top: 35%;
+  }
+} /* For screens below 435px */
+
+/* For screens between 300px and 250px */
+@media (max-width: 412) and (min-width: 250px) {
+  .container-text img {
+    height: 6%;
+    width: 6%;
+  }
+
+  .container-text img.red {
     position: absolute;
-    color: #0E3388; /* Tailwind color for blue */
-    font-size: 8rem; /* Small size for the SVG */
-    line-height: 0;
-    bottom: -80px; /* Adjusted value to move it down */
-    right: 15px; /* Move it slightly towards the center */
-    transform: rotate(0deg);
+    bottom: 5%; /* Adjusts the position of the red comma from the bottom */
   }
-  
-  /* For large screens (smaller screen adjustments) */
-  @media (max-width: 640px) {
-    .blue-comma {
-      bottom: -20px; /* Adjusted for smaller screens */
-      right: 2%; /* Adjusted for smaller screens */
-      font-size: 5rem; /* Adjust font size for smaller screens */
-    }
+
+  .container-text img.blue {
+    position: absolute;
+    top: 20%; /* Adjusts the position of the blue comma from the top */
+    right: 5%; /* Adjusts the position from the right */
   }
-  
+}
+
+@media (max-width: 435px) {
+  .container-text img {
+    height: 10%;
+    width: 10%;
+  }
+
+  .container-text img.red {
+    position: absolute;
+    bottom: 40%; /* Adjusts the position of the red comma from the bottom */
+  }
+
+  .container-text img.blue {
+    position: absolute;
+    top: 45%; /* Adjusts the position of the blue comma from the top */
+    right: 1%; /* Adjusts the position from the right */
+  }
+}
+
+/* For screens below 350px */
+@media (max-width: 350px) {
+  .container-text img {
+    height: 8%;
+    width: 8%;
+  }
+
+  .container-text img.red {
+    position: absolute;
+    bottom: 5%; /* Adjusts the position of the red comma from the bottom */
+  }
+
+  .container-text img.blue {
+    position: absolute;
+    top: 5%; /* Adjusts the position of the blue comma from the top */
+    right: 5%; /* Adjusts the position from the right */
+  }
+}
