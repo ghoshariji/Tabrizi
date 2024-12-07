@@ -229,22 +229,23 @@
     bottom: -50px; /* Initial position off-screen */
   }
   
-  /* Final position on hover or animation */
-  .blue-comma:hover {
-    bottom: -30px; /* Move to the desired position */
-  }
-  /* Info.css */
-
 /* General styling for the blue comma */
 /* Info.css */
 
 /* General styling for the blue comma */
 .blue-comma {
-    transition: bottom 1s ease-in-out; /* Smooth transition for the 'bottom' property */
     position: absolute;
-    bottom: -30px; /* Adjust this value as needed for small screens */
-    right: 10px; /* Position on the right side */
-    z-index: 10; /* Ensure it's on top of other elements */
+  color: #0E3388; /* Tailwind color for blue */
+  font-size: 8rem; /* Small size for the SVG */
+  line-height: 0;
+  bottom: -80px; /* Default position */
+  right: 15px; /* Move it slightly towards the center */
+  transform: rotate(0deg);
+  }
+  @media (min-width: 768px) and (max-width: 880px) {
+    .blue-comma {
+      bottom: -100px; /* Move it up slightly */
+    }
   }
   
   /* Adjust the size for smaller screens */
