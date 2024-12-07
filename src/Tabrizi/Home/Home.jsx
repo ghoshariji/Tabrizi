@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Background from "../Images/Background.jpg";
 import Title_Home from "../Images/Title_Home.svg";
-import Info from '../Info/Info';
-import Contact from '../Contact/Contact';
-import Header from '../Header/Header';
-import { FaBars, FaTimes } from 'react-icons/fa';
-import './Home.css';
-import Sidebar from '../Sidebar';
+import Info from "../Info/Info";
+import Contact from "../Contact/Contact";
+import Header from "../Header/Header";
+import { FaBars, FaTimes } from "react-icons/fa";
+import "./Home.css";
+import Sidebar from "../Sidebar";
 
 const Home = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -18,9 +18,14 @@ const Home = () => {
   };
 
   const goToContact = () => {
-    navigate('/contact');
+    navigate("/contact");
   };
-
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <>
       <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
@@ -31,7 +36,7 @@ const Home = () => {
         onClick={toggleSidebar}
         aria-label={isSidebarOpen ? "Close Sidebar" : "Open Sidebar"}
         className="fixed top-4 right-4 text-white p-3 text-2xl z-50 md:hidden"
-        style={{ marginRight: '1rem' }}
+        style={{ marginRight: "1rem" }}
       >
         {isSidebarOpen ? (
           <FaTimes className="text-2xl mb-5" />
@@ -39,21 +44,26 @@ const Home = () => {
           <FaBars className="text-2xl" />
         )}
       </button>
-      <div className='home'>
-        <div className='background-img'>
+      <div className="home">
+        <div className="background-img">
           <img src={Background} alt="Fond" />
         </div>
-        <div className='background'>
-          <div className='container'>
+        <div className="background">
+          <div className="container">
             <div>
-              <img className='title' src={Title_Home} alt="Titre" />
+              <img className="title" src={Title_Home} alt="Titre" />
               <p>
                 AG Sanitaire Chauffage vous accompagne dans tous vos projets,
-                <br />en vous proposant des solutions de chauffage performantes,
-                <br />économiques et parfaitement adaptées à vos besoins spécifiques
-                <br />pour un confort optimal en toute saison.
+                <br />
+                en vous proposant des solutions de chauffage performantes,
+                <br />
+                économiques et parfaitement adaptées à vos besoins spécifiques
+                <br />
+                pour un confort optimal en toute saison.
               </p>
-              <button onClick={goToContact}>À propos de nous</button>
+              <button onClick={() => scrollToSection("contact")}>
+                À propos de nous
+              </button>
             </div>
           </div>
         </div>

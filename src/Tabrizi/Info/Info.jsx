@@ -78,48 +78,26 @@ const Info = () => {
 
         {/* Text Section */}
         <div className="container-text relative text-center md:text-left">
-          {/* Top-left Comma */}
-          <span
-            className="hidden md:block absolute text-red-500 text-[10rem] leading-none top-[-130px] left-[-50px] rotate-[0deg]"
-          >
-            ,,
-          </span>
-          <span
-            className="block md:hidden absolute text-red-500 text-[5rem] leading-none top-[-80px] left-[5px] rotate-[0deg]"
-          >
+          <span className="hidden md:block absolute text-red-500 text-[10rem] leading-none top-[-130px] left-[-50px] rotate-[0deg]">
             ,,
           </span>
 
-          {/* Quote Text */}
-          <p className="text-lg md:text-xl lg:text-2xl px-4 md:px-0 leading-relaxed mt-10 mb-10">
-            "Chez AG Sanitaire, nous offrons
-            <br />
-            des solutions de qualité pour vos
-            <br />
-            besoins en installations sanitaires,
-            <br />
-            chauffage et dépannage. Notre équipe
-            <br />
-            veille à respecter les normes et à
-            <br />
-            optimiser l'efficacité énergétique.
-            <br />
-            Faites confiance à notre expertise
-            <br />
-            pour un confort durable et adapté à
-            <br />
-            votre budget."
+          <span className="block md:hidden absolute text-red-500 text-[5rem] leading-none top-[-80px] left-[5px] rotate-[0deg]">
+            ,,
+          </span>
+          <p className="text-base md:text-lg lg:text-xl leading-relaxed mt-10 mb-10 max-w-4xl">
+            "Chez AG Sanitaire, nous offrons des solutions de qualité pour vos
+            besoins en installations sanitaires, chauffage et dépannage. Notre
+            équipe veille à respecter les normes et à optimiser l'efficacité
+            énergétique. Faites confiance à notre expertise pour un confort
+            durable et adapté à votre budget."
           </p>
 
-          {/* Bottom-right Comma */}
-          <span
-            className="hidden md:block absolute text-blue-500 text-[8rem] lg:text-[12rem] leading-none bottom-[-10px] sm:bottom-[-30px] right-[10px] sm:right-[50px] rotate-[0deg]"
-          >
+          <span className="hidden md:block absolute text-blue-500 text-[8rem]  lg:text-[12rem] leading-none bottom-[-10px] sm:bottom-[-30px] right-[10px] sm:right-[50px] rotate-[0deg]">
             ,,
           </span>
-          <span
-            className="block md:hidden absolute text-blue-500 text-[4rem] leading-none bottom-[10px] sm:bottom-[20px] right-[40px] sm:right-[30px] rotate-[0deg]"
-          >
+
+          <span className="block md:hidden absolute text-blue-500 text-[4rem]  leading-none bottom-[10px] sm:bottom-[20px] right-[10px] sm:right-[20px] rotate-[0deg]">
             ,,
           </span>
         </div>
