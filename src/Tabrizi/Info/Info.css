@@ -217,3 +217,61 @@
         font-size: 18px;
     }
 }
+/* Info.css */
+
+/* Apply transition to the blue comma SVG */
+.blue-comma {
+    transition: bottom 1s ease-in-out; /* Smooth transition for the 'bottom' property */
+  }
+  
+  /* Set the initial position of the blue comma */
+  .blue-comma {
+    bottom: -50px; /* Initial position off-screen */
+  }
+  
+  /* Final position on hover or animation */
+  .blue-comma:hover {
+    bottom: -30px; /* Move to the desired position */
+  }
+  /* Info.css */
+
+/* General styling for the blue comma */
+/* Info.css */
+
+/* General styling for the blue comma */
+.blue-comma {
+    transition: bottom 1s ease-in-out; /* Smooth transition for the 'bottom' property */
+    position: absolute;
+    bottom: -30px; /* Adjust this value as needed for small screens */
+    right: 10px; /* Position on the right side */
+    z-index: 10; /* Ensure it's on top of other elements */
+  }
+  
+  /* Adjust the size for smaller screens */
+  @media (max-width: 768px) {
+    .blue-comma {
+      bottom: 10px; /* Move it up slightly for small screens */
+      right: 10px; /* Keep it to the right */
+      font-size: 4rem; /* Smaller size on small screens */
+    }
+  }
+  
+  .blue-comma {
+    position: absolute;
+    color: #0E3388; /* Tailwind color for blue */
+    font-size: 8rem; /* Small size for the SVG */
+    line-height: 0;
+    bottom: -80px; /* Adjusted value to move it down */
+    right: 15px; /* Move it slightly towards the center */
+    transform: rotate(0deg);
+  }
+  
+  /* For large screens (smaller screen adjustments) */
+  @media (max-width: 640px) {
+    .blue-comma {
+      bottom: -20px; /* Adjusted for smaller screens */
+      right: 2%; /* Adjusted for smaller screens */
+      font-size: 5rem; /* Adjust font size for smaller screens */
+    }
+  }
+  
