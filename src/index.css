@@ -24,15 +24,4 @@ code {
   user-select: none;
 }
 
-@media (max-width: 425px) {
-  .contact .absolute {
-    transform: translateX(-30%) translateY(190px);
-    left: 50%;
-  }
 
-  .contact .absolute img {
-    width: 493px;
-    height: 493px;
-    object-fit: contain;
-  }
-}

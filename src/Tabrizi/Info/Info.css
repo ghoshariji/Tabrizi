@@ -323,9 +323,6 @@
   margin-right: 3%;
 }
 
-/* Media queries for different screen sizes */
-
-/* For screens below 1288px */
 @media (max-width: 1288px) {
   .container-text img {
     height: 8%;
@@ -340,8 +337,6 @@
     margin-top: 75%;
   }
 }
-
-/* For screens below 1150px */
 @media (max-width: 1150px) {
   .container-text img {
     height: 8%;
@@ -357,7 +352,6 @@
   }
 }
 
-/* For screens below 1024px */
 @media (max-width: 1024px) {
   .container-text img {
     height: 8%;
@@ -372,8 +366,6 @@
     margin-top: 100%;
   }
 }
-
-/* For screens below 850px */
 @media (max-width: 850px) {
   .container-text img {
     height: 18%;
@@ -388,8 +380,6 @@
     margin-top: 150%;
   }
 }
-
-/* For screens below 780px */
 @media (max-width: 780px) {
   .container-text img {
     height: 7%;
@@ -403,9 +393,7 @@
   .container-text img.blue {
     margin-top: 35%;
   }
-} /* For screens below 435px */
-
-/* For screens between 300px and 250px */
+}
 @media (max-width: 412) and (min-width: 250px) {
   .container-text img {
     height: 6%;
@@ -414,13 +402,13 @@
 
   .container-text img.red {
     position: absolute;
-    bottom: 5%; /* Adjusts the position of the red comma from the bottom */
+    bottom: 5%;
   }
 
   .container-text img.blue {
     position: absolute;
-    top: 20%; /* Adjusts the position of the blue comma from the top */
-    right: 5%; /* Adjusts the position from the right */
+    top: 20%;
+    right: 5%;
   }
 }
 
@@ -432,13 +420,13 @@
 
   .container-text img.red {
     position: absolute;
-    bottom: 40%; /* Adjusts the position of the red comma from the bottom */
+    bottom: 40%;
   }
 
   .container-text img.blue {
     position: absolute;
-    top: 45%; /* Adjusts the position of the blue comma from the top */
-    right: 1%; /* Adjusts the position from the right */
+    top: 45%;
+    right: 1%;
   }
 }
 
@@ -451,12 +439,12 @@
 
   .container-text img.red {
     position: absolute;
-    bottom: 5%; /* Adjusts the position of the red comma from the bottom */
+    bottom: 5%;
   }
 
   .container-text img.blue {
     position: absolute;
-    top: 5%; /* Adjusts the position of the blue comma from the top */
-    right: 5%; /* Adjusts the position from the right */
+    top: 5%;
+    right: 5%;
   }
 }
