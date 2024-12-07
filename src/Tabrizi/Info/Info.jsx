@@ -39,46 +39,58 @@ const Info = () => {
 
   return (
     <div className="info">
-      <div className="container-box">
+      {/* Service Boxes */}
+      <div className="container-box flex flex-wrap justify-evenly items-center gap-6 px-4 sm:px-6 md:px-8">
         {box.map((item) => (
-          <div className="box" key={item.id}>
+          <div
+            className="box relative w-full max-w-[380px] bg-gray-800 rounded-md p-6 flex flex-col justify-between transition-all duration-300"
+            key={item.id}
+          >
             <FontAwesomeIcon
-              className="point"
+              className="point absolute top-3 left-3 text-2xl"
               icon={faCircle}
               style={{ color: item.color }}
             />
-            <h2>{item.title}</h2>
+            <h2 className="mt-8 ml-6 text-white font-rubik text-2xl font-light">
+              {item.title}
+            </h2>
             <button
+              className="mt-4 px-6 py-2 text-white rounded-md text-base font-light transition-colors duration-300"
               style={{
-                background:
-                  hoveredButton === item.id ? item.hoverColor : item.color,
+                background: hoveredButton === item.id ? item.hoverColor : item.color,
               }}
               onMouseEnter={() => setHoveredButton(item.id)}
               onMouseLeave={() => setHoveredButton(null)}
             >
               Découvrir
             </button>
-            <img src={item.icon} alt={item.alt} />
+            <img src={item.icon} alt={item.alt} className="mt-4 w-16 self-end" />
           </div>
         ))}
       </div>
 
+      {/* Info Section */}
       <div className="container-info">
+        {/* Image Section */}
         <div className="container-image">
           <img src={Photo_Info} alt="Illustration d'un homme qui discute" />
         </div>
 
+        {/* Text Section */}
         <div className="container-text relative text-center md:text-left">
-          {/* Blue Comma (Top-left for larger screens, top-left for small screens) */}
-          <span className="hidden md:block absolute text-red-500 text-[10rem] leading-none top-[-130px] left-[-50px] rotate-[0deg]">
-          ,,
+          {/* Top-left Comma */}
+          <span
+            className="hidden md:block absolute text-red-500 text-[10rem] leading-none top-[-130px] left-[-50px] rotate-[0deg]"
+          >
+            ,,
+          </span>
+          <span
+            className="block md:hidden absolute text-red-500 text-[5rem] leading-none top-[-80px] left-[5px] rotate-[0deg]"
+          >
+            ,,
           </span>
 
-          <span className="block md:hidden absolute text-red-500 text-[5rem] leading-none top-[-80px] left-[5px] rotate-[0deg]">
-          ,,
-          </span>
-
-          {/* Text */}
+          {/* Quote Text */}
           <p className="text-lg md:text-xl lg:text-2xl px-4 md:px-0 leading-relaxed mt-10 mb-10">
             "Chez AG Sanitaire, nous offrons
             <br />
@@ -88,24 +100,28 @@ const Info = () => {
             <br />
             chauffage et dépannage. Notre équipe
             <br />
-            veille à respecter les normes et à<br />
+            veille à respecter les normes et à
+            <br />
             optimiser l'efficacité énergétique.
             <br />
             Faites confiance à notre expertise
             <br />
-            pour un confort durable et adapté à<br />
+            pour un confort durable et adapté à
+            <br />
             votre budget."
           </p>
 
-          {/* Red Comma (Bottom-right for both mobile and desktop screens, always outside of the <p> tag) */}
-          <span className="hidden md:block absolute text-blue-500 text-[8rem]  lg:text-[12rem] leading-none bottom-[-10px] sm:bottom-[-30px] right-[10px] sm:right-[50px] rotate-[0deg]">
-              ,,
-            </span>
-
-            <span className="block md:hidden absolute text-blue-500 text-[4rem]  leading-none bottom-[10px] sm:bottom-[20px] right-[10px] sm:right-[20px] rotate-[0deg]">
-              ,,
-            </span>
-
+          {/* Bottom-right Comma */}
+          <span
+            className="hidden md:block absolute text-blue-500 text-[8rem] lg:text-[12rem] leading-none bottom-[-10px] sm:bottom-[-30px] right-[10px] sm:right-[50px] rotate-[0deg]"
+          >
+            ,,
+          </span>
+          <span
+            className="block md:hidden absolute text-blue-500 text-[4rem] leading-none bottom-[10px] sm:bottom-[20px] right-[40px] sm:right-[30px] rotate-[0deg]"
+          >
+            ,,
+          </span>
         </div>
       </div>
     </div>
