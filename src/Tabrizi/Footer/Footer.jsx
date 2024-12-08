@@ -73,7 +73,7 @@ function Footer() {
                 <span>
                   <FontAwesomeIcon icon={faEnvelope} />
                 </span>
-                <a href="mailto:info@tabrizisarl.ch">info@tabrizisarl.ch</a>
+                <a href="mailto:info@tabrizisarl.ch">info@agsanitaire.ch</a>
               </li>
             </ul>
           </div>

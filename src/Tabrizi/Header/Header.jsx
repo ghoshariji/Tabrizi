@@ -22,7 +22,7 @@ const Header = () => {
 
       <div className={`container-header ${menuOpen ? "active" : ""}`}>
         <div className="container-info">
-          <a href="mailto:info@tabrizisarl.ch">info@tabrizisarl.ch</a>
+          <a href="mailto:info@tabrizisarl.ch">info@agsanitaire.ch</a>
           <a href="tel:+41791254646">+41 79 125 46 46</a>
           <a
             href="https://www.google.com/maps/place/Ch.+de+Liamont+2,+1059+Peney-le-Jorat,+Suisse"
