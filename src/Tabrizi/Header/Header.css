@@ -26,7 +26,7 @@ header {
     object-fit: contain;
     background-color: #ffffff; /* Set background to white */
     padding: 5px; /* Optional: Add padding to ensure the logo content doesn't touch the edges */
-    border-radius: 5px; /* Optional: Add rounded corners for aesthetics */
+  /* Optional: Add rounded corners for aesthetics */
 }
 
 .menu-button {

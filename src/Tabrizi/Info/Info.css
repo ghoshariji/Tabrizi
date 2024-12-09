@@ -8,7 +8,7 @@
   .info .container-box {
     width: 100%;
     height: auto;
-    margin-bottom: 180px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -16,7 +16,6 @@
     flex-wrap: wrap; /* Ensures the items wrap on smaller screens */
     gap: 20px;
     overflow-x: auto;
-    padding: 0 15px; /* Adjusts the padding for responsiveness */
   }
   
   .info .container-box .box {
