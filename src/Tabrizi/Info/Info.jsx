@@ -39,6 +39,7 @@ const Info = () => {
     ];
 
   return (
+    <>
     <section id="info">
     <div className="info">
       {/* Service Boxes */}
@@ -77,7 +78,8 @@ const Info = () => {
           </div>
         ))}
       </div>
-
+      </section>
+<section id="comma">
       <div className="container-info flex flex-col md:flex-row items-center md:items-start gap-6">
         <div className="container-image w-full md:w-2/5">
           <img
@@ -105,6 +107,7 @@ const Info = () => {
       </div>
     </div>
     </section>
+      </>
   );
 };
 
