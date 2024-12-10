@@ -30,7 +30,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
         </div>
         <div
           className="flex flex-row items-center gap-4 cursor-pointer"
-          onClick={() => scrollToSection("home")}
+          onClick={() => scrollToSection("info")}
         >
             
 

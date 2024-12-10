@@ -11,7 +11,12 @@ const Header = () => {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
-
+  const handleScroll = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <header>
       <div className="container-logo">
@@ -48,21 +53,31 @@ const Header = () => {
             </a>
           </div>
         </div>
-
-        <ul className="container-navigation">
-          <li>
-            <Link to="/">Accueil</Link>
-          </li>
-          <li>
-            <Link to="/prestations">Nos prestations</Link>
-          </li>
-          <li>
-            <Link to="/propos">À propos de nous</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contactez-nous</Link>
-          </li>
-        </ul>
+        
+        <div>
+          <ul className="container-navigation">
+            <li>
+              <a href="#home" onClick={() => handleScroll("home")}>
+                Accueil
+              </a>
+            </li>
+            <li>
+              <a href="#info" onClick={() => handleScroll("info")}>
+                Nos prestations
+              </a>
+            </li>
+            <li>
+              <a href="#propos" onClick={() => handleScroll("propos")}>
+                À propos de nous
+              </a>
+            </li>
+            <li>
+              <a href="#contact" onClick={() => handleScroll("contact")}>
+                Contactez-nous
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
   );

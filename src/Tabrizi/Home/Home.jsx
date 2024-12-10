@@ -28,48 +28,50 @@ const Home = () => {
   };
   return (
     <>
-      <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
-      <div className="">
-        <Header />
-      </div>
-      <button
-        onClick={toggleSidebar}
-        aria-label={isSidebarOpen ? "Close Sidebar" : "Open Sidebar"}
-        className="fixed top-4 right-4 text-white p-3 text-2xl z-50 md:hidden"
-        style={{ marginRight: "1rem" }}
-      >
-        {isSidebarOpen ? (
-          <FaTimes className="text-2xl mb-5" />
-        ) : (
-          <FaBars className="text-2xl" />
-        )}
-      </button>
-      <div className="home">
-        <div className="background-img">
-          <img src={Background} alt="Fond" />
+      <section id="home">
+        <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
+        <div className="">
+          <Header />
         </div>
-        <div className="background">
-          <div className="container">
-            <div>
-              <img className="title" src={Title_Home} alt="Titre" />
-              <p>
-                AG Sanitaire Chauffage vous accompagne dans tous vos projets,
-                <br />
-                en vous proposant des solutions de chauffage performantes,
-                <br />
-                économiques et parfaitement adaptées à vos besoins spécifiques
-                <br />
-                pour un confort optimal en toute saison.
-              </p>
-              <button onClick={() => scrollToSection("contact")}>
-                À propos de nous
-              </button>
+        <button
+          onClick={toggleSidebar}
+          aria-label={isSidebarOpen ? "Close Sidebar" : "Open Sidebar"}
+          className="fixed top-4 right-4 text-white p-3 text-2xl z-50 md:hidden "
+          style={{ marginRight: "1rem" }}
+        >
+          {isSidebarOpen ? (
+            <FaTimes className="text-2xl mb-5" />
+          ) : (
+            <FaBars className="text-2xl" />
+          )}
+        </button>
+        <div className="home">
+          <div className="background-img">
+            <img src={Background} alt="Fond" />
+          </div>
+          <div className="background">
+            <div className="container">
+              <div>
+                <img className="title" src={Title_Home} alt="Titre" />
+                <p>
+                  AG Sanitaire Chauffage vous accompagne dans tous vos projets,
+                  <br />
+                  en vous proposant des solutions de chauffage performantes,
+                  <br />
+                  économiques et parfaitement adaptées à vos besoins spécifiques
+                  <br />
+                  pour un confort optimal en toute saison.
+                </p>
+                <button onClick={() => scrollToSection("contact")}>
+                  À propos de nous
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <Info />
-      <Contact />
+        <Info />
+        <Contact />
+      </section>
     </>
   );
 };

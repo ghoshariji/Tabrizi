@@ -39,6 +39,7 @@ const Info = () => {
     ];
 
   return (
+    <section id="info">
     <div className="info">
       {/* Service Boxes */}
       <div className="container-box flex flex-wrap justify-evenly items-center gap-6 px-4 sm:px-6 md:px-8">
@@ -103,6 +104,7 @@ const Info = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 
