@@ -55,11 +55,11 @@ const Info = () => {
                   icon={faCircle}
                   style={{ color: service.color }}
                 />
-                <h2 className="mt-8 ml-6 text-white font-rubik text-2xl font-light">
+                <h2 className="mt-8 text-white font-rubik text-4xl font-light">
                   {service.title}
                 </h2>
                 <button
-                  className="mt-4 px-6 py-2 text-white rounded-md text-base font-light transition-colors duration-300"
+                  className="mt-4 px-6 py-2 text-white text-base font-light transition-colors duration-300"
                   style={{
                     background:
                       hoveredButton === service.id

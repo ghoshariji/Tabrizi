@@ -42,7 +42,7 @@
   
   .info .container-box .box h2 {
     margin-top: 40px;
-    margin-left: 25px;
+    
     font-family: "Rubik";
     font-size: 30px;
     font-weight: 300;
@@ -59,7 +59,6 @@
     font-size: 18px;
     font-weight: 300;
     color: #ffffff;
-    border-radius: 5px;
     border: none;
     transition: 0.3s background-color;
     cursor: pointer;
