@@ -67,7 +67,7 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a href="#propos" onClick={() => handleScroll("propos")}>
+              <a href="#comma" onClick={() => handleScroll("comma")}>
                 À propos de nous
               </a>
             </li>
