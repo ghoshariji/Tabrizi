@@ -41,8 +41,7 @@ const Info = () => {
   return (
     <>
       <div className="info">
-      <section id="info">
-      
+        <section id="info">
           {/* Service Boxes */}
           <div className="container-box flex flex-wrap justify-evenly items-center gap-6 px-4 sm:px-6 md:px-8">
             {services.map((service) => (
@@ -79,36 +78,34 @@ const Info = () => {
               </div>
             ))}
           </div>
-       
-      </section>
-      <section id="comma">
-        <div className="container-info flex flex-col md:flex-row items-center md:items-start gap-6">
-          <div className="container-image w-full md:w-2/5">
-            <img
-              src={Photo_Info}
-              alt="Illustration d'un homme qui discute"
-              className="w-full h-auto object-contain"
-            />
+        </section>
+        <section id="comma">
+          <div className="container-info flex flex-col md:flex-row items-center md:items-start gap-6">
+            <div className="container-image w-full md:w-2/5">
+              <img
+                src={Photo_Info}
+                alt="Illustration d'un homme qui discute"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+
+            <div className="container-text ">
+              {/* Red Comma */}
+              <img src={red} alt="Red comma" className="red" />
+
+              <p className="text" style={{ font: "12px" }}>
+                "Chez AG Sanitaire, nous offrons des solutions de qualité pour
+                vos besoins en installations sanitaires, chauffage et dépannage.
+                Notre équipe veille à respecter les normes et à optimiser
+                l'efficacité énergétique. Faites confiance à notre expertise
+                pour un confort durable et adapté à votre budget."
+              </p>
+
+              {/* Blue Comma */}
+              <img src={blue} alt="Blue comma" className="blue" />
+            </div>
           </div>
-
-          <div className="container-text">
-            {/* Red Comma */}
-            <img src={red} alt="Red comma" className="red" />
-
-            <p className="text">
-              "Chez AG Sanitaire, nous offrons des solutions de qualité pour vos
-              besoins en installations sanitaires, chauffage et dépannage. Notre
-              équipe veille à respecter les normes et à optimiser l'efficacité
-              énergétique. Faites confiance à notre expertise pour un confort
-              durable et adapté à votre budget."
-            </p>
-
-            {/* Blue Comma */}
-            <img src={blue} alt="Blue comma" className="blue" />
-          </div>
-        </div>
-      </section>
-
+        </section>
       </div>
     </>
   );
