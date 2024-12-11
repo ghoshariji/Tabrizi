@@ -31,7 +31,7 @@
     flex-direction: column;
     justify-content: space-between;
     transition: all 0.3s ease; /* Smooth transition for responsive changes */
-  }
+  } 
   
   .info .container-box .box .point {
     position: absolute;
@@ -40,14 +40,15 @@
     font-size: 25px;
   }
   
-  .info .container-box .box h2 {
+ 
+.info .container-box .box h2 {
     margin-top: 40px;
-    margin-left: 25px;
+    margin-left: 10px;
     font-family: "Rubik";
     font-size: 30px;
     font-weight: 300;
     color: #ffffff;
-  }
+}
   
   .info .container-box .box button {
     position: absolute;
@@ -59,7 +60,6 @@
     font-size: 18px;
     font-weight: 300;
     color: #ffffff;
-    border-radius: 5px;
     border: none;
     transition: 0.3s background-color;
     cursor: pointer;
@@ -108,26 +108,31 @@
   @media (max-width: 768px) {
     .info {
       margin: 30px auto 30px auto; /* Added margin-top for smaller screens */
-      padding: 0 15px;
+      padding: 2px 15px;
     }
   
     .info .container-box {
       flex-direction: column;
-      padding: 0;
+      padding: 10px;
       align-items: center;
       justify-content: center;
+      
     }
   
     .info .container-box .box {
       width: 90%;
       max-width: none; /* Let it take up full available width */
       margin: 10px 0;
-      aspect-ratio: 1; /* Keeps the box square */
+      
+      aspect-ratio: 1; 
     }
   
     .info .container-box .box h2 {
-      font-size: 24px;
-      text-align: center;
+      font-family: "Rubik";
+      font-size: 30px;
+      font-weight: 300;
+    
+      margin-left: 10px;
     }
   
     .info .container-box .box button {
@@ -180,6 +185,7 @@
       width: 100%;
       height: auto;
       margin-left: 0;
+      
     }
   
     .info .container-box .box {
@@ -189,9 +195,11 @@
     }
   
     .info .container-box .box h2 {
-      font-size: 20px;
-      margin-top: 20px;
-      text-align: center;
+      font-family: "Rubik";
+      font-size: 30px;
+      font-weight: 300;
+     
+      margin-left: 10px;
     }
   
     .info .container-box .box button {

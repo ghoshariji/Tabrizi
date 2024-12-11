@@ -5,6 +5,8 @@ import Footer from "./Tabrizi/Footer/Footer";
 import Home from "./Tabrizi/Home/Home";
 import Contact from "./Tabrizi/Contact/Contact";
 
+
+
 const App = () => {
   return (
     <>
