@@ -27,13 +27,13 @@ function Footer() {
           <div className="link ml-3">
             <h2>NAVIGATION</h2>
             <ul>
-              <li>
+              <li className="text-gray-300">
                 <Link to="/">Accueil</Link>
               </li>
-              <li>
+              <li className="text-gray-300">
                 <Link to="/propos">À propos de nous</Link>
               </li>
-              <li>
+              <li className="text-gray-300">
                 <Link to="/propos">Contactez-nous</Link>
               </li>
             </ul>
@@ -42,15 +42,15 @@ function Footer() {
           <div className="services ">
             <h2>NOS PRESTATIONS</h2>
             <ul>
-              <li>Chauffage</li>
-              <li>Sanitaire</li>
-              <li>Dépannage</li>
+              <li className="text-gray-300">Chauffage</li>
+              <li className="text-gray-300">Sanitaire</li>
+              <li className="text-gray-300">Dépannage</li>
             </ul>
           </div>
           <div className="coord ml-3">
             <h2>NOUS CONTACTEZ</h2>
             <ul>
-              <li>
+              <li className="text-gray-300">
                 <span>
                   <FontAwesomeIcon icon={faLocationDot} />
                 </span>
@@ -63,13 +63,13 @@ function Footer() {
                   1059 Peney-le-Jorat, Suisse
                 </a>
               </li>
-              <li>
+              <li className="text-gray-300">
                 <span>
                   <FontAwesomeIcon icon={faPhone} />
                 </span>
                 <a href="tel:+41216474575">+41 79 125 46 46</a>
               </li>
-              <li>
+              <li className="text-gray-300">
                 <span>
                   <FontAwesomeIcon icon={faEnvelope} />
                 </span>
@@ -80,7 +80,7 @@ function Footer() {
           <div className="social">
             <h2>NOS RÉSEAUX</h2>
             <ul>
-              <li>
+              <li className="text-gray-300">
                 <a
                   href=""
                   target="_blank"
@@ -91,12 +91,13 @@ function Footer() {
                   Facebook
                 </a>
               </li>
-              <li>
+              <li className="text-gray-300">
                 <a
                   href=""
                   target="_blank"
                   rel="noopener noreferrer"
                   className="social-link"
+                  
                 >
                   <FontAwesomeIcon icon={faInstagram} className="social-icon" />
                   Instagram
