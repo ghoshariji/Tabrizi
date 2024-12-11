@@ -1,6 +1,6 @@
 import React from "react";
 import Image_Contact from "../Images/Image_Contact.svg";
-import "./Contact.css"
+import "./Contact.css";
 const Contact = () => {
   return (
     <section id="contact">
@@ -14,34 +14,34 @@ const Contact = () => {
             {/* Form Fields */}
             <div className="container-contact w-full flex flex-wrap sm:justify-between sm:space-x-0">
               <div className="input-box w-full sm:w-[48%] mb-5 flex flex-col">
-                <label className="text-white text-base font-normal mb-1">
+                <label className="text-white text-base font-normal mb-1 sm:text-left text-left">
                   E-mail
                 </label>
                 <input
                   type="text"
-                  className="w-full h-[40px] p-3 border-none rounded-md bg-[#575757] text-white font-Rubik text-base outline-none"
+                  className="w-full h-[40px] p-3 border-none  bg-[#575757] text-white font-Rubik text-base outline-none"
                 />
               </div>
               <div className="input-box w-full sm:w-[48%] mb-5 flex flex-col">
-                <label className="text-white text-base font-normal mb-1">
+                <label className="text-white text-base font-normal mb-1 sm:text-left text-left">
                   Numéro de téléphone
                 </label>
                 <input
                   type="text"
-                  className="w-full h-[40px] p-3 border-none rounded-md bg-[#575757] text-white font-Rubik text-base outline-none"
+                  className="w-full h-[40px] p-3 border-none  bg-[#575757] text-white font-Rubik text-base outline-none"
                 />
               </div>
             </div>
 
             <div className="input-box-message w-full mb-5 flex flex-col">
-              <label className="text-white text-base font-normal mb-1">
+              <label className="text-white text-base font-normal mb-1 sm:text-left text-left">
                 Votre message
               </label>
-              <textarea className="w-full h-[150px] p-3 border-none rounded-md bg-[#575757] text-white font-Rubik text-base outline-none resize-none" />
+              <textarea className="w-full h-[150px] p-3 border-none  bg-[#575757] text-white font-Rubik text-base outline-none resize-none" />
             </div>
 
-            <div className="container-btn mt-10 flex justify-center sm:justify-end">
-              <button className="px-[40px] py-[7.5px] bg-[#E32021] text-white font-Rubik text-base font-normal rounded-md transition-all duration-300 hover:bg-[#B71C1C]">
+            <div className="container-btn mt-10 flex justify-end sm:justify-end">
+              <button className="px-[40px] py-[7.5px] bg-[#E32021] text-white font-Rubik text-base font-normal  transition-all duration-300 hover:bg-[#B71C1C]">
                 Envoyer
               </button>
             </div>
