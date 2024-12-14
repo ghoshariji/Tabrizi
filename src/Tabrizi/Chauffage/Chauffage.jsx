@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Background from "../Images/Background.jpg";
+import Background from "./image/background-Image.jpeg";
 import Title_Home from "../Images/Title_Home.svg";
 import Info from "../Info/Info";
 import Contact from "../Contact/Contact";
