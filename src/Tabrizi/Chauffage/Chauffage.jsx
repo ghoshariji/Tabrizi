@@ -26,6 +26,7 @@ const Chauffage = () => {
           <div className="home">
             <div className="background-img">
               <img src={Background} alt="Fond" />
+              <div className="absolute inset-0 bg-black opacity-50"></div>
             </div>
 
             <div className="background">

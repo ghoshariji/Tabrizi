@@ -1,3 +1,21 @@
+
+  /******************************************************Overlap code************************************************************/
+
+  .background-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .depange-container {
+    position: relative;
+    margin-top: -50px;
+    z-index: 2;
+    padding: 20px;
+  }
+  /*******************************************************************************************************************/
+  
+
 header {
     position: absolute;
     top: 0;
@@ -240,3 +258,28 @@ header {
         font-size: 14px;
     }
 }
+
+
+/****************************************************Overlap Responsive Screen *****************************************/
+
+
+@media (max-width: 1024px) {
+    .sanitaire-container {
+      margin-top: -50px; 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .sanitaire-container {
+      margin-top: -40px;
+      padding: 15px; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .sanitaire-container{
+      margin-top: -40px;
+      padding: 10px; 
+    }
+  }
+  

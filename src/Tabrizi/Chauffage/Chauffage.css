@@ -251,10 +251,8 @@
     align-items: center;
     position: relative; 
     padding: 10px;
-    border: none; /* Remove the default border */
-    background-color: white; /* Set a background color for contrast */
-    
-    /* Define custom borders using pseudo-elements */
+    border: none; 
+    background-color: white; 
   }
   
   .chauffage-container .item .image1::before {
@@ -311,6 +309,7 @@
     margin-top: 20px;
    
   }
+  
   
   .chauffage-container .item .image1 p {
     position: absolute;
@@ -545,6 +544,3 @@
       );
     }
   }
-  
-  
-  

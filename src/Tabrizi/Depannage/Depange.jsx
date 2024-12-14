@@ -1,14 +1,17 @@
 import React, { useState } from "react";
-import Background from "../Images/Sanitaire.svg";
-import Title_Home from "../Images/Title_Home.svg";
+import Background from "./Image/Background-Image.jpeg";
+import Title_Home from "../Images/Title_depange.svg";
 import "./Depange.css";
 import DepangeHeader from "./DepangeHeader";
 import Contact from "../Contact/Contact";
+import img1 from "./Image/image1.png";
+import img2 from "./Image/image2.png";
+import img3 from "./Image/image3.png";
 const Depange = () => {
   const infoCards = [
     {
       title: "RECHERCHE DE FUITE",
-      img: "path/to/renovation_image.png", // Replace with actual image path
+      img: `${img1}`, // Replace with actual image path
       icon: "path/to/icon_image.png",
       title1: "Localisez et réparez les fuites rapidement !", // Replace with actual icon path
       description:
@@ -16,7 +19,7 @@ const Depange = () => {
     },
     {
       title: "CHAUFFAGE MOBILE",
-      img: "path/to/construction_image.png", // Replace with actual image path
+      img:`${img2}`, // Replace with actual image path
       icon: "path/to/icon_image.png",
       title1: "Des solutions de chauffage temporaire pour vous !", // Replace with actual icon path
       // Replace with actual icon path
@@ -25,7 +28,7 @@ const Depange = () => {
     },
     {
       title: "URGENCE",
-      img: "path/to/eau_gaz_image.png", // Replace with actual image path
+      img: `${img3}`, // Replace with actual image path
       icon: "path/to/icon_image.png",
       title1: "Une assistance rapide en cas de panne !", // Replace with actual icon path
       // Replace with actual icon path
@@ -44,6 +47,7 @@ const Depange = () => {
         <div className="home">
           <div className="background-img">
             <img src={Background} alt="Fond" />
+            <div className="absolute inset-0 bg-black opacity-60"></div>
           </div>
           <div className="background">
             <div className="container">
@@ -54,10 +58,10 @@ const Depange = () => {
           </div>
         </div>
 
-        <div className="chauffage-container">
+        <div className="depange-container">
           {infoCards.map((card, index) => (
             <div key={index}>
-              <div className="item relative">
+              <div className="item-dev relative">
                 {/* Blue Icon Circle on Left */}
                 <div className="absolute left-8 top-8 transform -translate-x-1/2 -translate-y-1/2 bg-green-500 p-3 rounded-full"></div>
                 {/* Card Title */}
@@ -67,7 +71,7 @@ const Depange = () => {
 
                 {/* Image Section */}
                 <div className="relative mb-4 p-5">
-                  <div className="item-border image2">
+                  <div className="item-border-dep image23">
                     <img
                       src={card.img}
                       alt={card.title}

@@ -4,9 +4,9 @@ import Header from "./Tabrizi/Header/Header";
 import Footer from "./Tabrizi/Footer/Footer";
 import Home from "./Tabrizi/Home/Home";
 import Contact from "./Tabrizi/Contact/Contact";
-import Chauffage from "./Tabrizi/Chauffage/Chauffage";
-import Sanitaire from "./Tabrizi/Sanitaire/Sanitaire";
-import Depange from "./Tabrizi/Depannage/Depange";
+import Chauffage from "./Tabrizi/Chauffage/Chauffage.jsx";
+import Sanitaire from "./Tabrizi/Sanitaire2/Sanitaire.jsx";
+import Depange from "./Tabrizi/Depannage/Depange.jsx";
 
 const App = () => {
   return (

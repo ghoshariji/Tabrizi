@@ -54,7 +54,7 @@ const Home = () => {
               <div>
                 <img className="title" src={Title_Home} alt="Titre" />
                 <p>
-                  AG Sanitaire Chauffage vous accompagne dans tous vos projets,
+                  AG Sanitaire vous accompagne dans tous vos projets,
                   <br />
                   en vous proposant des solutions de chauffage performantes,
                   <br />
