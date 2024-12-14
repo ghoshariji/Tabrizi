@@ -6,7 +6,7 @@ import Home from "./Tabrizi/Home/Home";
 import Contact from "./Tabrizi/Contact/Contact";
 import Chauffage from "./Tabrizi/Chauffage/Chauffage";
 import Sanitaire from "./Tabrizi/Sanitaire/Sanitaire";
-
+import Depange from "./Tabrizi/Depannage/Depange";
 
 const App = () => {
   return (
@@ -15,8 +15,9 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/chauffage" element={<Chauffage/>}/>
-        <Route path="/sanitaire" element={<Sanitaire/>}/>
+        <Route path="/chauffage" element={<Chauffage />} />
+        <Route path="/sanitaire" element={<Sanitaire />} />
+        <Route path="/depange" element={<Depange />} />
       </Routes>
       <Footer />
     </>
