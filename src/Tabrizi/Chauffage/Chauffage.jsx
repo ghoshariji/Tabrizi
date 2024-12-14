@@ -32,52 +32,47 @@ const Chauffage = () => {
               <div className="container">
                 <div>
                   <img className="title" src={Title_Home} alt="Titre" />
-
-                  <button onClick={() => scrollToSection("contact")}>
-                    À propos de nous
-                  </button>
                 </div>
               </div>
             </div>
           </div>
 
           <div className="chauffage-container">
-          <div className="section">
-            <h2>ÉNERGIE VERTE</h2>
-        
-            <div className="item">
-              <div className="item-border image1">
-                <img src={img1} />
-                <p>Pompe à chaleur air/eau</p>
+            <div className="section">
+              <h2>ÉNERGIE VERTE</h2>
+
+              <div className="item">
+                <div className="item-border image1">
+                  <img src={img1} />
+                  <p>Pompe à chaleur air/eau</p>
+                </div>
+              </div>
+
+              <div className="item">
+                <div className="item-border image2">
+                  <img src={img2} />
+                  <p>Pompe à chaleur air/air</p>
+                </div>
               </div>
             </div>
-        
-            <div className="item">
-              <div className="item-border image2">
-                <img src={img2} />
-                <p>Pompe à chaleur air/air</p>
+
+            <div className="section">
+              <h2>ÉNERGIE FOSSILE</h2>
+              <div className="item">
+                <div className="item-border image3">
+                  <img src={img3} />
+                  <p>Chauffage à mazout</p>
+                </div>
+              </div>
+              <div className="item">
+                <div className="item-border image4">
+                  <img src={img4} />
+                  <p>Chauffage à gaz</p>
+                </div>
               </div>
             </div>
           </div>
-        
-          <div className="section">
-            <h2>ÉNERGIE FOSSILE</h2>
-            <div className="item">
-              <div className="item-border image3">
-                <img src={img3}/>
-                <p>Chauffage à mazout</p>
-              </div>
-            </div>
-            <div className="item">
-              <div className="item-border image4">
-                <img src={img4} />
-                <p>Chauffage à gaz</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-          
+
           <Contact />
         </section>
       </>
