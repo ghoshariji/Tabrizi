@@ -4,7 +4,8 @@ import Header from "./Tabrizi/Header/Header";
 import Footer from "./Tabrizi/Footer/Footer";
 import Home from "./Tabrizi/Home/Home";
 import Contact from "./Tabrizi/Contact/Contact";
-import Sanitaire from "./Tabrizi/Sanitaire/Sanitaire";
+import Chauffage from "./Tabrizi/Chauffage/Chauffage";
+
 
 const App = () => {
   return (
@@ -13,7 +14,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/sanitaire" element={<Sanitaire />} />
+        <Route path="/chauffage" element={<Chauffage/>}/>
       </Routes>
       <Footer />
     </>
