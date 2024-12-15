@@ -1,0 +1,28 @@
+<svg width="900" height="233" viewBox="-100 0 800 233" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Vertical Line Left -->
+  <line x1="119" y1="43" x2="119" y2="0" stroke="red" stroke-width="6"/>
+  <!-- Vertical Line Right -->
+  <line x1="119" y1="227" x2="119" y2="184" stroke="red" stroke-width="6"/>
+  <!-- Horizontal Line Top -->
+  <line x1="122" y1="3" x2="-100" y2="3" stroke="red" stroke-width="6"/>
+  <!-- Horizontal Line Bottom -->
+  <line x1="122" y1="230" x2="-100" y2="230" stroke="red" stroke-width="6"/>
+  <!-- Diagonal Line -->
+  <line x1="-97" y1="0" x2="-97" y2="227" stroke="red" stroke-width="6"/>
+  
+  <!-- Text in the center -->
+  <text x="20%" y="40%" fill="#FFFFFF" font-size="60" font-family="Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">
+    CHAUFFAGE
+  </text>
+  
+  <!-- Second line of text with 14px size and left-aligned -->
+  <text x="48%" y="60%" fill="#FFFFFF" font-size="14" font-family="Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">
+    Découvrez nos solutions de chauffage écologiques avec des pompes à chaleur performantes pour une énergie verte et durable.
+  </text>
+  
+  <!-- Second line continued (split into two lines) -->
+  <text x="24%" y="70%" fill="#FFFFFF" font-size="14" font-family="Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">
+    Optimisez votre confort tout en réduisant votre empreinte carbone.
+  </text>
+</svg>

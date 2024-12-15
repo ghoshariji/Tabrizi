@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Background from "./image/background-Image.jpeg";
-import Title_Home from "../Images/Title_Home.svg";
+import Title_Home from "./image/chaufage.svg";
 import Contact from "../Contact/Contact";
 import "./Chauffage.css";
 import HeaderChauffage from "./HeaderChauffage.jsx";
@@ -26,7 +26,7 @@ const Chauffage = () => {
 
             <div className="background">
               <div className="container">
-                <div>
+                <div className="mr-40">
                   <img className="title" src={Title_Home} alt="Titre" />
                 </div>
               </div>
@@ -35,10 +35,10 @@ const Chauffage = () => {
 
           <div className="chauffage-container">
             <div className="section">
-              <h2>ÉNERGIE VERTE</h2>
+              <h2 className="mt-5">ÉNERGIE VERTE</h2>
 
               <div className="item">
-                <div className="item-border image1">
+                <div className="item-border image1 mt-10">
                   <img src={img1} />
                   <p>Pompe à chaleur air/eau</p>
                 </div>
@@ -53,9 +53,9 @@ const Chauffage = () => {
             </div>
 
             <div className="section">
-              <h2>ÉNERGIE FOSSILE</h2>
+              <h2 className="mt-5">ÉNERGIE FOSSILE</h2>
               <div className="item">
-                <div className="item-border image3">
+                <div className="item-border image3 mt-10">
                   <img src={img3} />
                   <p>Chauffage à mazout</p>
                 </div>

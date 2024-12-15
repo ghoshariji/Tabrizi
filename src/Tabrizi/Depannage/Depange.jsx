@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Background from "./Image/Background-Image.jpeg";
-import Title_Home from "../Images/Title_depange.svg";
+import Title_Home from "./Image/depange.svg";
 import "./Depange.css";
 import DepangeHeader from "./DepangeHeader";
 import Contact from "../Contact/Contact";
@@ -19,7 +19,7 @@ const Depange = () => {
     },
     {
       title: "CHAUFFAGE MOBILE",
-      img:`${img2}`, // Replace with actual image path
+      img: `${img2}`, // Replace with actual image path
       icon: "path/to/icon_image.png",
       title1: "Des solutions de chauffage temporaire pour vous !", // Replace with actual icon path
       // Replace with actual icon path
@@ -63,14 +63,16 @@ const Depange = () => {
             <div key={index}>
               <div className="item-dev relative">
                 {/* Blue Icon Circle on Left */}
-                <div className="absolute left-8 top-8 transform -translate-x-1/2 -translate-y-1/2 bg-green-500 p-3 rounded-full"></div>
+                <div className="absolute left-8 top-8 transform -translate-x-1/2 -translate-y-1/2 bg-green-500 p-0.5 w-4 h-4 rounded-full"></div>
+
+
                 {/* Card Title */}
-                <h3 className="text-2xl font-bold text-white mb-4 mt-12 text-center">
-                  {card.title}
-                </h3>
 
                 {/* Image Section */}
-                <div className="relative mb-4 p-5">
+                <div className="relative mb-4 p-5 mt-10">
+                  <h3 className="text-2xl font-bold text-white mb-14 mt-4 text-center">
+                    {card.title}
+                  </h3>
                   <div className="item-border-dep image23">
                     <img
                       src={card.img}
@@ -78,17 +80,21 @@ const Depange = () => {
                       className="w-full h-48 object-cover rounded-lg"
                     />
                   </div>
+
+                  {/* Title1 */}
+                  <h4 className="text-xl font-semibold text-white mb-4 px-5 text-left">
+                    {card.title1}
+                  </h4>
+
+                  {/* Description */}
+                  <p className="text-white mb-10 px-5 text-left">
+                    {card.description}
+                  </p>
                 </div>
 
-                {/* Title1 */}
-                <h4 className="text-xl font-semibold text-white mb-4 pl-5 pr-3 text-left">
-                  {card.title1}
-                </h4>
 
-                {/* Description */}
-                <p className="text-white mb-10 p-5 text-left">
-                  {card.description}
-                </p>
+
+
               </div>
             </div>
           ))}
