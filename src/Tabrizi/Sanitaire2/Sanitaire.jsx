@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Contact from "../Contact/Contact";
-import Header from "../Header/Header";
 import Background from "../Images/Sanitaire.svg";
 import Title_Home from "../Images/Title_Sanitaire.svg";
 import img1 from "./Image/image1.png";
@@ -40,7 +39,7 @@ const Sanitaire = () => {
 
   return (
     <div>
-      <section id="home">
+      <section>
         <div className="">
           <SanitaireHeader />
         </div>
@@ -60,7 +59,7 @@ const Sanitaire = () => {
         </div>
 
         {/* Updated class name here */}
-        <div className="sanitaire-container">
+        <div className="sanitaire-container" style={{ overflowX: "hidden" }}>
           {infoCards.map((card, index) => (
             <div key={index}>
               <div className="item relative">

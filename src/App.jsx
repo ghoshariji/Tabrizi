@@ -5,7 +5,7 @@ import Footer from "./Tabrizi/Footer/Footer";
 import Home from "./Tabrizi/Home/Home";
 import Contact from "./Tabrizi/Contact/Contact";
 import Chauffage from "./Tabrizi/Chauffage/Chauffage.jsx";
-import Sanitaire from "./Tabrizi/Sanitaire2/Sanitaire.jsx";
+  import Sanitaire from "./Tabrizi/Sanitaire2/Sanitaire.jsx";
 import Depange from "./Tabrizi/Depannage/Depange.jsx";
 
 const App = () => {
@@ -15,8 +15,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/chauffage" element={<Chauffage />} />
-        <Route path="/sanitaire" element={<Sanitaire />} />
+       <Route path="/chauffage" element={<Chauffage />} />
+         <Route path="/sanitaire" element={<Sanitaire />} />
         <Route path="/depange" element={<Depange />} />
       </Routes>
       <Footer />

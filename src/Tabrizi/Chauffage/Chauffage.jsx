@@ -1,13 +1,8 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import Background from "./image/background-Image.jpeg";
 import Title_Home from "../Images/Title_Home.svg";
-import Info from "../Info/Info";
 import Contact from "../Contact/Contact";
-
-import { FaBars, FaTimes } from "react-icons/fa";
 import "./Chauffage.css";
-import Sidebar from "../Sidebar";
 import HeaderChauffage from "./HeaderChauffage.jsx";
 import img1 from "./image/image1.png";
 import img2 from "./image/image2.png";

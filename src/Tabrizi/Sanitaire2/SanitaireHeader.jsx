@@ -8,10 +8,6 @@ import "./SanitaireHeader.css";
 
 const SanitaireHeader = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
   const handleScroll = (id) => {
     const section = document.getElementById(id);
     if (section) {
@@ -79,11 +75,6 @@ const SanitaireHeader = () => {
             </li>
           </ul>
         </div>
-
-        {/* <div className="mt-50">
-        
-        <SanitaireInfo />
-        </div> */}
       </div>
     </header>
   );

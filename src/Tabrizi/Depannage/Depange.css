@@ -5,7 +5,10 @@
   align-items: stretch;  
   margin: 0 auto;
   padding: 10px;
-  gap: 15px; /* Increased gap for better spacing */
+  gap: 15px; 
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+
+  /* Increased gap for better spacing */
 }
 
 .depange-container > div {
