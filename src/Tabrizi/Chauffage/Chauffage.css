@@ -700,7 +700,7 @@
       width: 100%;
       min-width: 170px; /* Keep section width small */
       min-height: auto;
-      padding: 3px;
+      padding: 2px;
   }
 
   .chauffage-container .section h2 {
@@ -722,8 +722,8 @@
   .chauffage-container .item .image1 img,
   .chauffage-container .item .image3 img,
   .chauffage-container .item .image4 img {
-      width: 80px; /* Resize images */
-      height: 80px;
+      width: 120px; /* Resize images */
+      height: 120px;
       margin-bottom: 3px;
       object-fit: contain;
   }
@@ -732,8 +732,8 @@
   .chauffage-container .item .image2,
   .chauffage-container .item .image3,
   .chauffage-container .item .image4 {
-      width: 100px; /* Ensure the container size matches the image-border */
-      height: 100px;
+      width: 120px; /* Ensure the container size matches the image-border */
+      height: 120px;
       display: flex;
       justify-content: center;
       align-items: center; /* Center the image within the container */
