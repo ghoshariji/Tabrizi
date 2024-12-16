@@ -58,17 +58,16 @@
   height: auto;
   object-fit: contain;
 }
-
 .home .container p {
-  line-height: 1.7rem;
+  line-height: 2rem; /* Increased for better readability */
   margin-left: 0;
   margin-top: 20px;
   font-family: "Rubik";
-  font-size: 18px;
+  font-size: 24px; /* Increased from 20px to 24px */
   font-weight: 300;
   color: #ffffff;
-  
 }
+
 
 .home .container button {
   margin-left: 0;
@@ -115,6 +114,7 @@
     font-size: 15px;
     margin-left: 0;
     margin-top: 40px;
+    font-weight: 700;
   }
 
   .home .container button {
@@ -157,9 +157,10 @@
   }
 
   .home .container p {
-    font-size: 9px;
+    font-size: 13px;
     margin-left: 0;
     margin-top: 20px;
+    font-weight: 700;
   }
 
   .home .container button {
@@ -201,9 +202,10 @@
   }
 
   .home .container p {
-    font-size: 11px;
+    font-size: 13px;
     margin-left: 0;
     margin-top: 20px;
+    font-weight: 700;
   }
 
   .home .container button {
