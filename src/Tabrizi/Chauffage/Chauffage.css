@@ -548,95 +548,219 @@
   }
 
 
-  @media screen and (max-width: 380px) {
+  @media screen and (max-width: 330px) {
     .chauffage-container {
-      flex-direction: column;
-      align-items: center;
-      gap: 8px;
-      padding: 0 5px; /* Reduce padding for smaller screens */
+        padding: 2px;
+        gap: 2px;
     }
-  
+
     .chauffage-container .section {
-      width: 100%;
-      min-width: 320px; /* Ensure adequate width for visibility */
-      min-height: 500px;
+        width: 100%;
+        min-width: 250px; /* Reduce section width further */
+        min-height: auto;
+        padding: 5px;
     }
-  
+
     .chauffage-container .section h2 {
-      font-size: 16px; /* Slightly reduce font size */
-      line-height: 20px;
-      margin-bottom: 12px;
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 8px;
     }
-  
-    .chauffage-container .section .item {
-      margin-top: 4px;
-      margin-bottom: 30px; /* Reduce bottom margin */
-      gap: 6px;
+
+    .chauffage-container .item {
+        margin-bottom: 20px;
     }
-  
+
     .chauffage-container .item .item-border {
-      width: 160px; /* Adjust width for better fit */
-      height: 160px; /* Adjust height for better fit */
+        width: 130px; /* Further reduce width */
+        height: 130px; /* Further reduce height */
     }
-  
-    .chauffage-container .item .item-border img {
-      width: 80px; /* Adjust image size */
-      height: 80px;
+
+    .chauffage-container .item .item-border img,
+    .chauffage-container .item .image1 img,
+    .chauffage-container .item .image3 img,
+    .chauffage-container .item .image4 img {
+        width: 80px; /* Reduce image size */
+        height: 80px;
+        margin-bottom: 3px;
+        object-fit: contain;
     }
-  
+
     .chauffage-container .item .image1,
     .chauffage-container .item .image2,
     .chauffage-container .item .image3,
     .chauffage-container .item .image4 {
-      width: 140px;
-      height: 140px;
+        width: 150px; /* Reduce width */
+        height: 150px; /* Reduce height */
     }
-  
-    .chauffage-container .item .image2 img,
-    .chauffage-container .item .image3 img,
-    .chauffage-container .item .image4 img {
-      width: 90px;
-      height: 90px;
-    }
-  
-    .chauffage-container .item .image4 img {
-      margin-bottom: 0;
-    }
-  
-    .chauffage-container .item .item-border p {
-      font-size: 9px; /* Reduce font size */
-      line-height: 11px;
-    }
-  
+
     .chauffage-container .item .image2::before,
-    .chauffage-container .item .image2::after {
-      border: 2px solid red; /* Adjust border size */
+    .chauffage-container .item .image2::after,
+    .chauffage-container .item .image3::before,
+    .chauffage-container .item .image3::after,
+    .chauffage-container .item .image4::before,
+    .chauffage-container .item .image4::after {
+        border-width: 4px; /* Reduce border thickness */
     }
-  
-    .chauffage-container .item .image2::before {
-      clip-path: polygon(
-        0 0,
-        80% 0,
-        85% 10%,
-        65% 10%,
-        65% 75%,
-        85% 80%,
-        85% 100%,
-        0 100%
-      );
+
+    .chauffage-container .item .item-border p,
+    .chauffage-container .item .image1 p,
+    .chauffage-container .item .image2 p,
+    .chauffage-container .item .image3 p,
+    .chauffage-container .item .image4 p {
+        font-size: 8px; /* Reduce font size */
+        line-height: 10px;
+        padding: 2px;
     }
-  
-    .chauffage-container .item .image2::after {
-      clip-path: polygon(
-        0 0,
-        85% 0,
-        85% 10%,
-        65% 10%,
-        65% 75%,
-        85% 80%,
-        85% 100%,
-        0 100%
-      );
-    }
+}
+
+@media screen and (max-width: 230px) {
+  .chauffage-container {
+      padding: 1px; /* Reduce padding to prevent overflow */
+      gap: 1px; /* Reduce gap for smaller screens */
   }
-  
+
+  .chauffage-container .section {
+      width: 100%;
+      min-width: 170px; /* Keep section width small */
+      min-height: auto;
+      padding: 3px;
+  }
+
+  .chauffage-container .section h2 {
+      font-size: 12px;
+      line-height: 16px;
+      margin-bottom: 6px;
+  }
+
+  .chauffage-container .item {
+      margin-bottom: 15px; /* Reduce spacing between items */
+  }
+
+  .chauffage-container .item .item-border {
+      width: 100px; /* Adjust width to fit small screens */
+      height: 100px;
+  }
+
+  .chauffage-container .item .item-border img,
+  .chauffage-container .item .image1 img,
+  .chauffage-container .item .image3 img,
+  .chauffage-container .item .image4 img {
+      width: 80px; /* Resize images */
+      height: 80px;
+      margin-bottom: 3px;
+      object-fit: contain;
+  }
+
+  .chauffage-container .item .image1,
+  .chauffage-container .item .image2,
+  .chauffage-container .item .image3,
+  .chauffage-container .item .image4 {
+      width: 100px; /* Ensure the container size matches the image-border */
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center; /* Center the image within the container */
+      position: relative; /* Add relative positioning for better border control */
+  }
+
+  .chauffage-container .item .image3::before,
+  .chauffage-container .item .image3::after,
+  .chauffage-container .item .image4::before,
+  .chauffage-container .item .image4::after {
+      content: '';
+      position: absolute;
+      width: 100%; /* Ensure border aligns with container size */
+      height: 100%;
+      border-width: 4px; /* Adjust border width */
+      border-style: solid;
+      border-color: #e40808; /* Use appropriate border color */
+      box-sizing: border-box; /* Include border in the container's dimensions */
+  }
+
+  .chauffage-container .item .item-border p,
+  .chauffage-container .item .image1 p,
+  .chauffage-container .item .image2 p,
+  .chauffage-container .item .image3 p,
+  .chauffage-container .item .image4 p {
+      font-size: 7px; /* Further reduce font size */
+      line-height: 9px;
+      padding: 2px;
+  }
+}
+
+
+@media screen and (max-width: 329px) and (min-width: 231px) {
+  .chauffage-container {
+      padding: 1px; /* Reduce padding to prevent overflow */
+      gap: 1px; /* Reduce gap for smaller screens */
+  }
+
+  .chauffage-container .section {
+      width: 100%;
+      min-width: 170px; /* Keep section width small */
+      min-height: auto;
+      padding: 2px;
+  }
+
+  .chauffage-container .section h2 {
+      font-size: 12px;
+      line-height: 16px;
+      margin-bottom: 6px;
+  }
+
+  .chauffage-container .item {
+      margin-bottom: 15px; /* Reduce spacing between items */
+  }
+
+  .chauffage-container .item .item-border {
+      width: 100px; /* Adjust width to fit small screens */
+      height: 100px;
+  }
+
+  .chauffage-container .item .item-border img,
+  .chauffage-container .item .image1 img,
+  .chauffage-container .item .image3 img,
+  .chauffage-container .item .image4 img {
+      width: 120px; /* Resize images */
+      height: 120px;
+      margin-bottom: 3px;
+      object-fit: contain;
+  }
+
+  .chauffage-container .item .image1,
+  .chauffage-container .item .image2,
+  .chauffage-container .item .image3,
+  .chauffage-container .item .image4 {
+      width: 120px; /* Ensure the container size matches the image-border */
+      height: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center; /* Center the image within the container */
+      position: relative; /* Add relative positioning for better border control */
+  }
+
+  .chauffage-container .item .image3::before,
+  .chauffage-container .item .image3::after,
+  .chauffage-container .item .image4::before,
+  .chauffage-container .item .image4::after {
+      content: '';
+      position: absolute;
+      width: 100%; /* Ensure border aligns with container size */
+      height: 100%;
+      border-width: 4px; /* Adjust border width */
+      border-style: solid;
+      border-color: #e40808; /* Use appropriate border color */
+      box-sizing: border-box; /* Include border in the container's dimensions */
+  }
+
+  .chauffage-container .item .item-border p,
+  .chauffage-container .item .image1 p,
+  .chauffage-container .item .image2 p,
+  .chauffage-container .item .image3 p,
+  .chauffage-container .item .image4 p {
+      font-size: 7px; /* Further reduce font size */
+      line-height: 9px;
+      padding: 2px;
+  }
+}
