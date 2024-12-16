@@ -67,7 +67,6 @@
   font-size: 18px;
   font-weight: 300;
   color: #ffffff;
-  text-align: center;
   
 }
 
@@ -85,6 +84,7 @@
   cursor: pointer;
   text-align: center;
   width: 60%;
+  justify-content: center;
 }
 
 .home .container button:hover {
@@ -107,11 +107,12 @@
     max-width: 1200px;
 
     left: 50%;
-    top: 3vh; /* Moves container down for larger screens */
+    top: 3vh;
+    /* Moves container down for larger screens */
   }
 
   .home .container p {
-    font-size: 9px;
+    font-size: 15px;
     margin-left: 0;
     margin-top: 40px;
   }
@@ -123,6 +124,7 @@
     margin-top: 30px;
     text-align: center;
     width: 75%;
+
   }
 }
 
