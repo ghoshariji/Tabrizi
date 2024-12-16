@@ -50,24 +50,25 @@ const Home = () => {
             <img src={Background} alt="Fond" />
           </div>
           <div className="background">
-            <div className="container">
-              <div>
-                <img className="title" src={Title_Home} alt="Titre" />
-                <p>
-                  AG Sanitaire vous accompagne dans tous vos projets,
-                  <br />
-                  en vous proposant des solutions de chauffage performantes,
-                  <br />
-                  économiques et parfaitement adaptées à vos besoins spécifiques
-                  <br />
-                  pour un confort optimal en toute saison.
-                </p>
-                <button onClick={() => scrollToSection("contact")}>
-                  À propos de nous
-                </button>
-              </div>
-            </div>
-          </div>
+  <div className="container m-0 p-0">
+    <div>
+      <img className="title" src={Title_Home} alt="Titre" />
+      <p className="text-left">
+        AG Sanitaire vous accompagne dans tous vos projets,
+        <br />
+        en vous proposant des solutions de chauffage performantes,
+        <br />
+        économiques et parfaitement adaptées à vos besoins spécifiques
+        <br />
+        pour un confort optimal en toute saison.
+      </p>
+      <button onClick={() => scrollToSection("contact")}>
+        À propos de nous
+      </button>
+    </div>
+  </div>
+</div>
+
         </div>
         <Info />
         <Contact />

@@ -50,7 +50,7 @@
   .chauffage-container .section h2 {
     text-align: center;
     margin-bottom: 20px;
-    font-family: 'Rubik', sans-serif; 
+    font-family: 'Rubik'; 
     font-weight: 400; 
     font-size: 30px; 
     line-height: 35.55px; 
@@ -150,7 +150,7 @@
     margin: 0; 
     background-color: #fff;
     padding: 5px; 
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik';
     font-weight: 600; 
     font-size: 20px; 
     line-height: 23.7px; 
@@ -237,7 +237,7 @@
     margin: 0; 
     background-color: #fff;
     padding: 5px; 
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik';
     font-weight: 600; 
     font-size: 20px; 
     line-height: 23.7px; 
@@ -320,7 +320,7 @@
     margin: 0; 
     background-color: #fff;
     padding: 5px; 
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik';
     font-weight: 600; 
     font-size: 20px; 
     line-height: 23.7px; 
@@ -406,7 +406,7 @@
     margin: 0; 
     background-color: #fff;
     padding: 5px; 
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik';
     font-weight: 600; 
     font-size: 20px; 
     line-height: 23.7px; 
@@ -443,7 +443,7 @@
     .chauffage-container .section h2 {
         text-align: center;
         margin-bottom: 20px;
-        font-family: 'Rubik', sans-serif; 
+        font-family: 'Rubik'; 
         font-weight: 400; 
         font-size: 20px; 
         line-height: 23.7px; 
@@ -503,7 +503,7 @@
   
     .chauffage-container .item .item-border p {
     font-size: 12px;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik';
     font-weight: 600; 
     line-height: 14.22px; 
     color: #000; 
