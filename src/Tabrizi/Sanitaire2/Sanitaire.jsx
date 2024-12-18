@@ -9,6 +9,9 @@ import img4 from "./Image/sanitaire.svg";
 
 import "./Sanitaire2.css";
 import SanitaireHeader from "./SanitaireHeader";
+import { useNavigate } from "react-router-dom";
+import Sidebar from "../Sidebar";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Sanitaire = () => {
   const infoCards = [
@@ -38,12 +41,96 @@ const Sanitaire = () => {
     },
   ];
 
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const [val,setVal] = useState("")
+  
+  const contactFunc = (val) =>{
+    setVal(val)
+    const section = document.getElementById("contact");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }
   return (
     <div>
       <section>
+        <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
+
         <div className="">
           <SanitaireHeader />
         </div>
+        <button
+          onClick={toggleSidebar}
+          aria-label={isSidebarOpen ? "Close Sidebar" : "Open Sidebar"}
+          className="fixed top-4 right-4 text-white p-3 text-2xl z-50 md:hidden "
+          style={{ marginRight: "1rem" }}
+        >
+          {isSidebarOpen ? (
+            <FaTimes className="text-2xl mb-5" />
+          ) : (
+            <>
+              <svg
+                width="18"
+                height="5"
+                viewBox="0 0 17 1"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  x1="4.37114e-08"
+                  y1="0.5"
+                  x2="17"
+                  y2="0.500001"
+                  stroke="white"
+                />
+              </svg>
+
+              <svg
+                width="18"
+                height="5"
+                viewBox="0 0 17 1"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  x1="4.37114e-08"
+                  y1="0.5"
+                  x2="17"
+                  y2="0.500001"
+                  stroke="white"
+                />
+              </svg>
+              <svg
+                width="18"
+                height="4"
+                viewBox="0 0 17 1"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  x1="4.37114e-08"
+                  y1="0.5"
+                  x2="17"
+                  y2="0.500001"
+                  stroke="white"
+                />
+              </svg>
+            </>
+          )}
+        </button>
 
         <div className="home">
           <div className="background-img">
@@ -61,7 +148,7 @@ const Sanitaire = () => {
         {/* Updated class name here */}
         <div className="sanitaire-container" style={{ overflowX: "hidden" }}>
           {infoCards.map((card, index) => (
-            <div key={index}>
+            <div key={index} onClick={() => contactFunc(card.title)}>
               <div className="item relative">
                 {/* Blue Icon Circle on Left */}
                 <div className="absolute left-8 top-8 transform -translate-x-1/2 -translate-y-1/2 bg-blue-500 p-0.5 w-4 h-4 rounded-full"></div>
@@ -94,7 +181,7 @@ const Sanitaire = () => {
           ))}
         </div>
 
-        <Contact />
+        <Contact val={val}/>
       </section>
     </div>
   );

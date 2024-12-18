@@ -42,7 +42,54 @@ const Home = () => {
           {isSidebarOpen ? (
             <FaTimes className="text-2xl mb-5" />
           ) : (
-            <FaBars className="text-2xl" />
+            <>
+              <svg
+                width="18"
+                height="5"
+                viewBox="0 0 17 1"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  x1="4.37114e-08"
+                  y1="0.5"
+                  x2="17"
+                  y2="0.500001"
+                  stroke="white"
+                />
+              </svg>
+
+              <svg
+                width="18"
+                height="5"
+                viewBox="0 0 17 1"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  x1="4.37114e-08"
+                  y1="0.5"
+                  x2="17"
+                  y2="0.500001"
+                  stroke="white"
+                />
+              </svg>
+              <svg
+                width="18"
+                height="4"
+                viewBox="0 0 17 1"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  x1="4.37114e-08"
+                  y1="0.5"
+                  x2="17"
+                  y2="0.500001"
+                  stroke="white"
+                />
+              </svg>
+            </>
           )}
         </button>
         <div className="home">
@@ -53,7 +100,7 @@ const Home = () => {
             <div className="container m-0 p-0">
               <div>
                 <img className="title" src={Title_Home} alt="Titre" />
-                <p className="text-left font-bold">
+                <p className="lg:text-left sm:text-center">
                   AG Sanitaire vous accompagne dans tous vos projets,
                   <br />
                   en vous proposant des solutions de chauffage performantes,

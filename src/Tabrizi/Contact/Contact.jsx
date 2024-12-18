@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image_Contact from "../Images/Image_Contact.svg";
 import "./Contact.css";
-const Contact = () => {
+
+const Contact = ({ val }) => {
+  const [message, setMessage] = useState("");
+
+  // Effect to update the message when `val` changes
+  useEffect(() => {
+    if (val) {
+      setMessage(`Je suis intéressé par ${val}`);
+    }
+  }, [val]);
+
   return (
     <section id="contact">
       <div className="contact w-full py-[150px] bg-[#1A1A1A] overflow-hidden relative">
@@ -19,7 +29,7 @@ const Contact = () => {
                 </label>
                 <input
                   type="text"
-                  className="w-full h-[40px] p-3 border-none  bg-[#575757] text-white font-Rubik text-base outline-none"
+                  className="w-full h-[40px] p-3 border-none bg-[#575757] text-white font-Rubik text-base outline-none"
                 />
               </div>
               <div className="input-box w-full sm:w-[48%] mb-5 flex flex-col">
@@ -28,7 +38,7 @@ const Contact = () => {
                 </label>
                 <input
                   type="text"
-                  className="w-full h-[40px] p-3 border-none  bg-[#575757] text-white font-Rubik text-base outline-none"
+                  className="w-full h-[40px] p-3 border-none bg-[#575757] text-white font-Rubik text-base outline-none"
                 />
               </div>
             </div>
@@ -37,11 +47,15 @@ const Contact = () => {
               <label className="text-white text-base font-normal mb-1 sm:text-left text-left">
                 Votre message
               </label>
-              <textarea className="w-full h-[150px] p-3 border-none  bg-[#575757] text-white font-Rubik text-base outline-none resize-none" />
+              <textarea
+                value={message} // Setting dynamic message
+                onChange={(e) => setMessage(e.target.value)} // Allow user to edit the message if needed
+                className="w-full h-[150px] p-3 border-none bg-[#575757] text-white font-Rubik text-base outline-none resize-none"
+              />
             </div>
 
             <div className="container-btn mt-10 flex justify-end sm:justify-end">
-              <button className="px-[40px] py-[7.5px] bg-[#E32021] text-white font-Rubik text-base font-normal  transition-all duration-300 hover:bg-[#B71C1C]">
+              <button className="px-[40px] py-[7.5px] bg-[#E32021] text-white font-Rubik text-base font-normal transition-all duration-300 hover:bg-[#B71C1C]">
                 Envoyer
               </button>
             </div>

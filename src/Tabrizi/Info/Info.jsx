@@ -8,6 +8,7 @@ import Photo_Info from "../Images/Photo_Info.png";
 import "./Info.css";
 import red from "../../assets/red.jpg";
 import blue from "../../assets/blue.jpg";
+import { useNavigate } from "react-router-dom";
 const Info = () => {
   const [hoveredButton, setHoveredButton] = useState(null);
 
@@ -19,6 +20,7 @@ const Info = () => {
       hoverColor: "#B71C1C",
       icon: Icon_Chauffage,
       alt: "Icône du chauffage",
+      nav: "chauffage",
     },
     {
       id: 2,
@@ -27,6 +29,7 @@ const Info = () => {
       hoverColor: "#0056b3",
       icon: Icon_Sanitaire,
       alt: "Icône du sanitaire",
+      nav: "sanitaire",
     },
     {
       id: 3,
@@ -35,9 +38,11 @@ const Info = () => {
       hoverColor: "#1e7e34",
       icon: Icon_Depannage,
       alt: "Icône du dépannage",
+      nav: "depange",
     },
   ];
 
+  const navigate = useNavigate();
   return (
     <>
       <div className="info">
@@ -48,6 +53,7 @@ const Info = () => {
               <div
                 className="box relative w-full max-w-[380px] bg-gray-800 rounded-md p-6 flex flex-col justify-between transition-all duration-300"
                 key={service.id}
+                onClick={() => navigate(`/${service.nav}`)}
               >
                 <FontAwesomeIcon
                   className="point absolute top-3 left-3 text-2xl"

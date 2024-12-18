@@ -8,15 +8,103 @@ import img1 from "./image/image1.png";
 import img2 from "./image/image2.png";
 import img3 from "./image/image3.png";
 import img4 from "./image/image4.png";
+import { useNavigate } from "react-router-dom";
+import Sidebar from "../Sidebar.jsx";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Chauffage = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  
+  const [val,setVal] = useState("")
+  
+  const contactFunc = (val) =>{
+    setVal(val)
+    const section = document.getElementById("contact");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }
   return (
     <div>
       <>
         <section className="chauffage">
+          <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
+
           <div className="">
             <HeaderChauffage />
           </div>
+          <button
+            onClick={toggleSidebar}
+            aria-label={isSidebarOpen ? "Close Sidebar" : "Open Sidebar"}
+            className="fixed top-4 right-4 text-white p-3 text-2xl z-50 md:hidden "
+            style={{ marginRight: "1rem" }}
+          >
+            {isSidebarOpen ? (
+              <FaTimes className="text-2xl mb-5" />
+            ) : (
+              <>
+              <svg
+                width="18"
+                height="5"
+                viewBox="0 0 17 1"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  x1="4.37114e-08"
+                  y1="0.5"
+                  x2="17"
+                  y2="0.500001"
+                  stroke="white"
+                />
+              </svg>
+
+              <svg
+                width="18"
+                height="5"
+                viewBox="0 0 17 1"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  x1="4.37114e-08"
+                  y1="0.5"
+                  x2="17"
+                  y2="0.500001"
+                  stroke="white"
+                />
+              </svg>
+              <svg
+                width="18"
+                height="4"
+                viewBox="0 0 17 1"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  x1="4.37114e-08"
+                  y1="0.5"
+                  x2="17"
+                  y2="0.500001"
+                  stroke="white"
+                />
+              </svg>
+            </>
+            )}
+          </button>
 
           <div className="home">
             <div className="background-img">
@@ -34,7 +122,7 @@ const Chauffage = () => {
           </div>
 
           <div className="chauffage-container">
-            <div className="section">
+            <div className="section"  onClick={() => contactFunc("ÉNERGIE VERTE")}>
               <h2 className="mt-5">ÉNERGIE VERTE</h2>
 
               <div className="item">
@@ -52,7 +140,7 @@ const Chauffage = () => {
               </div>
             </div>
 
-            <div className="section">
+            <div className="section"  onClick={() => contactFunc("ÉNERGIE FOSSILE")}>
               <h2 className="mt-5">ÉNERGIE FOSSILE</h2>
               <div className="item">
                 <div className="item-border image3 mt-10">
@@ -69,7 +157,7 @@ const Chauffage = () => {
             </div>
           </div>
 
-          <Contact />
+          <Contact val={val}/>
         </section>
       </>
     </div>

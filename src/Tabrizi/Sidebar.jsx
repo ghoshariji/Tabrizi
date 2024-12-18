@@ -14,7 +14,6 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
     toggleSidebar(); // Close sidebar after scrolling
   };
 
-
   return (
     <div
       className={`fixed top-0 right-0 h-full bg-black text-white w-64 transition-transform transform ${
@@ -32,9 +31,6 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           className="flex flex-row items-center gap-4 cursor-pointer"
           onClick={() => scrollToSection("info")}
         >
-            
-
-            
           <span className="text-lg">Nos prestations</span>
         </div>
         <div
@@ -48,6 +44,27 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           onClick={() => scrollToSection("contact")}
         >
           <span className="text-lg">Contactez-nous</span>
+        </div>
+
+        <div
+          className="flex flex-row items-center gap-4 cursor-pointer"
+          onClick={() => navigate("/sanitaire")}
+        >
+          <span className="text-lg">Sanitaire</span>
+        </div>
+
+        <div
+          className="flex flex-row items-center gap-4 cursor-pointer"
+          onClick={() => navigate("/depange")}
+        >
+          <span className="text-lg">Depannage</span>
+        </div>
+
+        <div
+          className="flex flex-row items-center gap-4 cursor-pointer"
+          onClick={() => navigate("/chauffage")}
+        >
+          <span className="text-lg">Chauffage</span>
         </div>
       </div>
     </div>

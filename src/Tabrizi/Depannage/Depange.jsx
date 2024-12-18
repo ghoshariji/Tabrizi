@@ -7,6 +7,10 @@ import Contact from "../Contact/Contact";
 import img1 from "./Image/image1.png";
 import img2 from "./Image/image2.png";
 import img3 from "./Image/image3.png";
+import { useNavigate } from "react-router-dom";
+import Sidebar from "../Sidebar";
+import { FaBars, FaTimes } from "react-icons/fa";
+
 const Depange = () => {
   const infoCards = [
     {
@@ -36,14 +40,96 @@ const Depange = () => {
         "Nos équipes interviennent rapidemment pour résoudre vos problèmes de chauffage ou de plomberie. Faites confiance à notre réactivité et à notre expertise pour un dépannage efficace et sécurisé.",
     },
   ];
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const navigate = useNavigate();
 
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const [val,setVal] = useState("")
+  
+  const contactFunc = (val) =>{
+    setVal(val)
+    const section = document.getElementById("contact");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }
   return (
     <div>
       <section id="home">
+        <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
+
         <div className="">
           <DepangeHeader />
         </div>
+        <button
+          onClick={toggleSidebar}
+          aria-label={isSidebarOpen ? "Close Sidebar" : "Open Sidebar"}
+          className="fixed top-4 right-4 text-white p-3 text-2xl z-50 md:hidden "
+          style={{ marginRight: "1rem" }}
+        >
+          {isSidebarOpen ? (
+            <FaTimes className="text-2xl mb-5" />
+          ) : (
+            <>
+            <svg
+              width="18"
+              height="5"
+              viewBox="0 0 17 1"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                x1="4.37114e-08"
+                y1="0.5"
+                x2="17"
+                y2="0.500001"
+                stroke="white"
+              />
+            </svg>
 
+            <svg
+              width="18"
+              height="5"
+              viewBox="0 0 17 1"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                x1="4.37114e-08"
+                y1="0.5"
+                x2="17"
+                y2="0.500001"
+                stroke="white"
+              />
+            </svg>
+            <svg
+              width="18"
+              height="4"
+              viewBox="0 0 17 1"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                x1="4.37114e-08"
+                y1="0.5"
+                x2="17"
+                y2="0.500001"
+                stroke="white"
+              />
+            </svg>
+          </>
+          )}
+        </button>
         <div className="home">
           <div className="background-img">
             <img src={Background} alt="Fond" />
@@ -61,10 +147,9 @@ const Depange = () => {
         <div className="depange-container">
           {infoCards.map((card, index) => (
             <div key={index}>
-              <div className="item-dev relative">
+              <div className="item-dev relative" onClick={() => contactFunc(card.title)}>
                 {/* Blue Icon Circle on Left */}
                 <div className="absolute left-8 top-8 transform -translate-x-1/2 -translate-y-1/2 bg-green-500 p-0.5 w-4 h-4 rounded-full"></div>
-
 
                 {/* Card Title */}
 
@@ -91,16 +176,12 @@ const Depange = () => {
                     {card.description}
                   </p>
                 </div>
-
-
-
-
               </div>
             </div>
           ))}
         </div>
 
-        <Contact />
+        <Contact val={val}/>
       </section>
     </div>
   );
