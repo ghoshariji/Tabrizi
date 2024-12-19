@@ -11,6 +11,7 @@ import img4 from "./image/image4.png";
 import { useNavigate } from "react-router-dom";
 import Sidebar from "../Sidebar.jsx";
 import { FaBars, FaTimes } from "react-icons/fa";
+import ChaSidebar from "./ChauSidebar.jsx";
 
 const Chauffage = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -40,8 +41,8 @@ const Chauffage = () => {
   return (
     <div>
       <>
-        <section className="chauffage">
-          <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
+        <section className="chauffage" id="chauffage">
+          <ChaSidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
 
           <div className="">
             <HeaderChauffage />
@@ -121,6 +122,8 @@ const Chauffage = () => {
             </div>
           </div>
 
+          <section id="chhauffage-con">
+
           <div className="chauffage-container">
             <div className="section"  onClick={() => contactFunc("ÉNERGIE VERTE")}>
               <h2 className="mt-5">ÉNERGIE VERTE</h2>
@@ -156,7 +159,7 @@ const Chauffage = () => {
               </div>
             </div>
           </div>
-
+          </section>
           <Contact val={val}/>
         </section>
       </>

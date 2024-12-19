@@ -12,6 +12,7 @@ import SanitaireHeader from "./SanitaireHeader";
 import { useNavigate } from "react-router-dom";
 import Sidebar from "../Sidebar";
 import { FaBars, FaTimes } from "react-icons/fa";
+import SaniSidebar from "./SanitaireSidebar";
 
 const Sanitaire = () => {
   const infoCards = [
@@ -55,19 +56,19 @@ const Sanitaire = () => {
     }
   };
 
-  const [val,setVal] = useState("")
-  
-  const contactFunc = (val) =>{
-    setVal(val)
+  const [val, setVal] = useState("");
+
+  const contactFunc = (val) => {
+    setVal(val);
     const section = document.getElementById("contact");
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
   return (
     <div>
-      <section>
-        <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
+      <section id="sanitaire-home">
+        <SaniSidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
 
         <div className="">
           <SanitaireHeader />
@@ -146,6 +147,7 @@ const Sanitaire = () => {
         </div>
 
         {/* Updated class name here */}
+        <section id="sanitaire">
         <div className="sanitaire-container" style={{ overflowX: "hidden" }}>
           {infoCards.map((card, index) => (
             <div key={index} onClick={() => contactFunc(card.title)}>
@@ -180,8 +182,12 @@ const Sanitaire = () => {
             </div>
           ))}
         </div>
+        </section>
 
-        <Contact val={val}/>
+
+
+
+        <Contact val={val} />
       </section>
     </div>
   );

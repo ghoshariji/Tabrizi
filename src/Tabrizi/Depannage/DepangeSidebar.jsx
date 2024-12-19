@@ -2,7 +2,7 @@ import React from "react";
 import { FaBars, FaHome, FaInfo, FaPhone } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
-const Sidebar = ({ isOpen, toggleSidebar }) => {
+const DepSidebar = ({ isOpen, toggleSidebar }) => {
   const navigate = useNavigate();
 
   // Scroll to a specific section
@@ -23,7 +23,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
       <div className="flex flex-col items-center justify-center h-full space-y-12">
         <div
           className="flex flex-row items-center gap-4 cursor-pointer"
-          onClick={() => scrollToSection("home")}
+          onClick={() => scrollToSection("home-dep")}
         >
           <span className="text-lg">Accueil</span>
         </div>
@@ -56,7 +56,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
         </div>
         <div
           className="flex flex-row items-center gap-4 cursor-pointer"
-          onClick={() => scrollToSection("comma")}
+          onClick={() => scrollToSection("depange")}
         >
           <span className="text-lg">À propos de nous</span>
         </div>
@@ -71,4 +71,4 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
   );
 };
 
-export default Sidebar;
+export default DepSidebar;

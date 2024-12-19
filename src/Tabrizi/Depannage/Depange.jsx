@@ -10,6 +10,7 @@ import img3 from "./Image/image3.png";
 import { useNavigate } from "react-router-dom";
 import Sidebar from "../Sidebar";
 import { FaBars, FaTimes } from "react-icons/fa";
+import DepSidebar from "./DepangeSidebar";
 
 const Depange = () => {
   const infoCards = [
@@ -65,8 +66,8 @@ const Depange = () => {
   }
   return (
     <div>
-      <section id="home">
-        <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
+      <section id="home-dep">
+        <DepSidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
 
         <div className="">
           <DepangeHeader />
@@ -144,6 +145,7 @@ const Depange = () => {
           </div>
         </div>
 
+<section id="depange">
         <div className="depange-container">
           {infoCards.map((card, index) => (
             <div key={index}>
@@ -180,7 +182,7 @@ const Depange = () => {
             </div>
           ))}
         </div>
-
+        </section>
         <Contact val={val}/>
       </section>
     </div>
