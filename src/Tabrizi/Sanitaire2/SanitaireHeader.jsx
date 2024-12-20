@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import Logo from "../Images/Logo.svg";
@@ -14,6 +14,8 @@ const SanitaireHeader = () => {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
+  const naviagte = useNavigate();
+
   return (
     <header>
       <div className="container-logo">
@@ -52,25 +54,25 @@ const SanitaireHeader = () => {
         </div>
 
         <div>
-          <ul className="container-navigation">
+        <ul className="container-navigation">
             <li>
               <a href="#home" onClick={() => handleScroll("home")}>
                 Accueil
               </a>
             </li>
             <li>
-              <a href="#info" onClick={() => handleScroll("info")}>
-                Nos prestations
+              <a href="#info" onClick={() => naviagte("/sanitaire")}>
+                Sanitaire
               </a>
             </li>
             <li>
-              <a href="#comma" onClick={() => handleScroll("comma")}>
-                À propos de nous
+              <a href="#comma" onClick={() => naviagte("/chauffage")}>
+                Chauffage
               </a>
             </li>
             <li>
-              <a href="#contact" onClick={() => handleScroll("contact")}>
-                Contactez-nous
+              <a href="#contact" onClick={() => naviagte("/depannage")}>
+                Depannage
               </a>
             </li>
           </ul>

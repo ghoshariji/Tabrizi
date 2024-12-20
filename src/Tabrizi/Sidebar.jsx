@@ -43,7 +43,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
 
         <div
           className="flex flex-row items-center gap-4 cursor-pointer"
-          onClick={() => navigate("/depange")}
+          onClick={() => navigate("/depannage")}
         >
           <span className="text-lg">Depannage</span>
         </div>
