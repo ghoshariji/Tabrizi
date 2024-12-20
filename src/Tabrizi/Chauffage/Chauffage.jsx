@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Background from "./image/background-Image.jpeg";
-import Title_Home from "./image/chaufage.svg";
+import Title_Home from "./image/chaufage.png";
 import Contact from "../Contact/Contact";
 import "./Chauffage.css";
 import HeaderChauffage from "./HeaderChauffage.jsx";
