@@ -17,9 +17,9 @@ const Contact = ({ val }) => {
       <div className="contact w-full py-[150px] bg-[#1A1A1A] overflow-hidden relative">
         <div className="container max-w-[1320px] mx-auto flex flex-col sm:flex-row px-5 sm:px-10 md:px-20 relative">
           <div className="container-text w-full sm:w-1/2 mb-10 z-10 relative">
-            <h1 className="mb-12 text-white font-Rubik text-4xl font-light text-center sm:text-left">
+            <p className="mb-12 text-white font-Rubik text-4xl font-light text-center sm:text-left">
               Contactez-nous
-            </h1>
+            </p>
 
             {/* Form Fields */}
             <div className="container-contact w-full flex flex-wrap sm:justify-between sm:space-x-0">
