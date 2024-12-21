@@ -9,11 +9,6 @@
   <line x1="222" y1="230" x2="0" y2="230" stroke="#008000" stroke-width="6"/>
   <!-- Diagonal Line -->
   <line x1="3" y1="0" x2="3" y2="227" stroke="#008000" stroke-width="6"/>
-  <!-- Text in the center -->
-  <text x="40%" y="50%" fill="#FFFFFF" font-size="60" font-family="Arial, sans-serif" text-anchor="middle" dominant-baseline="middle">
-    DÉPANNAGE
-  </text>
+  
+
 </svg>
-
-
-

@@ -55,15 +55,15 @@ const Depange = () => {
     }
   };
 
-  const [val,setVal] = useState("")
-  
-  const contactFunc = (val) =>{
-    setVal(val)
+  const [val, setVal] = useState("");
+
+  const contactFunc = (val) => {
+    setVal(val);
     const section = document.getElementById("contact");
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
   return (
     <div>
       <section id="home-dep">
@@ -82,53 +82,53 @@ const Depange = () => {
             <FaTimes className="text-2xl mb-5" />
           ) : (
             <>
-            <svg
-              width="18"
-              height="5"
-              viewBox="0 0 17 1"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <line
-                x1="4.37114e-08"
-                y1="0.5"
-                x2="17"
-                y2="0.500001"
-                stroke="white"
-              />
-            </svg>
+              <svg
+                width="18"
+                height="5"
+                viewBox="0 0 17 1"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  x1="4.37114e-08"
+                  y1="0.5"
+                  x2="17"
+                  y2="0.500001"
+                  stroke="white"
+                />
+              </svg>
 
-            <svg
-              width="18"
-              height="5"
-              viewBox="0 0 17 1"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <line
-                x1="4.37114e-08"
-                y1="0.5"
-                x2="17"
-                y2="0.500001"
-                stroke="white"
-              />
-            </svg>
-            <svg
-              width="18"
-              height="4"
-              viewBox="0 0 17 1"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <line
-                x1="4.37114e-08"
-                y1="0.5"
-                x2="17"
-                y2="0.500001"
-                stroke="white"
-              />
-            </svg>
-          </>
+              <svg
+                width="18"
+                height="5"
+                viewBox="0 0 17 1"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  x1="4.37114e-08"
+                  y1="0.5"
+                  x2="17"
+                  y2="0.500001"
+                  stroke="white"
+                />
+              </svg>
+              <svg
+                width="18"
+                height="4"
+                viewBox="0 0 17 1"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  x1="4.37114e-08"
+                  y1="0.5"
+                  x2="17"
+                  y2="0.500001"
+                  stroke="white"
+                />
+              </svg>
+            </>
           )}
         </button>
         <div className="home">
@@ -137,53 +137,68 @@ const Depange = () => {
             <div className="absolute inset-0 bg-black opacity-60"></div>
           </div>
           <div className="background">
-            <div className="container">
+            <div className="container" style={{ position: "relative" }}>
               <div>
-                <img className="title" src={Title_Home} alt="Titre" />
+                <img
+                  className="title w-full h-auto sm:w-3/4 md:w-2/3"
+                  src={Title_Home}
+                  alt="Titre"
+                />
+                <h1
+                  className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl sm:text-5xl md:text-6xl font-sans text-center"
+                  style={{
+                    margin: "0",
+                  }}
+                >
+                  DÉPANNAGE
+                </h1>
               </div>
             </div>
           </div>
         </div>
 
-<section id="depange">
-        <div className="depange-container">
-          {infoCards.map((card, index) => (
-            <div key={index}>
-              <div className="item-dev relative" onClick={() => contactFunc(card.title)}>
-                {/* Blue Icon Circle on Left */}
-                <div className="absolute left-8 top-8 transform -translate-x-1/2 -translate-y-1/2 bg-green-500 p-0.5 w-4 h-4 rounded-full"></div>
+        <section id="depange">
+          <div className="depange-container">
+            {infoCards.map((card, index) => (
+              <div key={index}>
+                <div
+                  className="item-dev relative"
+                  onClick={() => contactFunc(card.title)}
+                >
+                  {/* Blue Icon Circle on Left */}
+                  <div className="absolute left-8 top-8 transform -translate-x-1/2 -translate-y-1/2 bg-green-500 p-0.5 w-4 h-4 rounded-full"></div>
 
-                {/* Card Title */}
+                  {/* Card Title */}
 
-                {/* Image Section */}
-                <div className="relative mb-4 p-5 mt-10">
-                  <h3 className="text-2xl font-bold text-white mb-14 mt-4 text-center">
-                    {card.title}
-                  </h3>
-                  <div className="item-border-dep image23">
-                    <img
-                      src={card.img}
-                      alt={card.title}
-                      className="w-full h-48 object-cover rounded-lg"
-                    />
+                  {/* Image Section */}
+                  <div className="relative mb-4 p-5 mt-10">
+                    <h3 className="text-2xl font-bold text-white mb-14 mt-4 text-center">
+                      {card.title}
+                    </h3>
+                    <div className="item-border-dep image23">
+                      <img
+                        src={card.img}
+                        alt={card.title}
+                        className="w-full h-48 object-cover rounded-lg"
+                      />
+                    </div>
+
+                    {/* Title1 */}
+                    <h4 className="text-xl font-semibold text-white mb-4 px-5 text-left">
+                      {card.title1}
+                    </h4>
+
+                    {/* Description */}
+                    <p className="text-white mb-10 px-5 text-left">
+                      {card.description}
+                    </p>
                   </div>
-
-                  {/* Title1 */}
-                  <h4 className="text-xl font-semibold text-white mb-4 px-5 text-left">
-                    {card.title1}
-                  </h4>
-
-                  {/* Description */}
-                  <p className="text-white mb-10 px-5 text-left">
-                    {card.description}
-                  </p>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
         </section>
-        <Contact val={val}/>
+        <Contact val={val} />
       </section>
     </div>
   );

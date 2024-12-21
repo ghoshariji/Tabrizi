@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons";
 import Logo from "../Images/Logo.svg";
@@ -20,12 +20,12 @@ const DepangeHeader = () => {
   const naviagte = useNavigate();
 
   return (
-    <header>
-      <div className="container-logo">
-        <Link to="/">
-          <img className="logo" src={Logo} alt="Logo de AG" />
-        </Link>
-      </div>
+     <header className="lg:border-r lg:border-b lg:border-white md:border-r md:border-b md:border-white border-0 p-0">
+       <div className="container-logo">
+         {/* <Link to="/"> */}
+           <img className="logo" src={Logo} alt="Logo de AG" />
+         {/* </Link> */}
+       </div>
 
       <div className={`container-header ${menuOpen ? "active" : ""}`}>
         <div className="container-info">
@@ -57,9 +57,9 @@ const DepangeHeader = () => {
         </div>
 
         <div>
-        <ul className="container-navigation">
+          <ul className="container-navigation">
             <li>
-              <a href="#home" onClick={() => handleScroll("home")}>
+              <a href="#home" onClick={() => naviagte("/")}>
                 Accueil
               </a>
             </li>

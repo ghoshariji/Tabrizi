@@ -1,17 +1,15 @@
 import React, { useState } from "react";
 import Contact from "../Contact/Contact";
 import Background from "../Images/Sanitaire.svg";
-import Title_Home from "../Images/Title_Sanitaire.svg";
+import Title_Home1 from "./Image/sanitaire.svg";
 import img1 from "./Image/image1.png";
 import img2 from "./Image/image2.png";
 import img3 from "./Image/image3.png";
-import img4 from "./Image/sanitaire.svg";
 
 import "./Sanitaire2.css";
 import SanitaireHeader from "./SanitaireHeader";
 import { useNavigate } from "react-router-dom";
-import Sidebar from "../Sidebar";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
 import SaniSidebar from "./SanitaireSidebar";
 
 const Sanitaire = () => {
@@ -140,7 +138,19 @@ const Sanitaire = () => {
           <div className="background">
             <div className="container">
               <div>
-                <img className="title" src={img4} alt="Titre" />
+                <img
+                  className="title w-full h-auto sm:w-3/4 md:w-2/3"
+                  src={Title_Home1}
+                  alt="Titre"
+                />
+                <h1
+                  className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl sm:text-5xl md:text-6xl font-sans text-center"
+                  style={{
+                    margin: "0",
+                  }}
+                >
+                  DÉPANNAGE
+                </h1>
               </div>
             </div>
           </div>
@@ -148,44 +158,41 @@ const Sanitaire = () => {
 
         {/* Updated class name here */}
         <section id="sanitaire">
-        <div className="sanitaire-container" style={{ overflowX: "hidden" }}>
-          {infoCards.map((card, index) => (
-            <div key={index} onClick={() => contactFunc(card.title)}>
-              <div className="item relative">
-                {/* Blue Icon Circle on Left */}
-                <div className="absolute left-8 top-8 transform -translate-x-1/2 -translate-y-1/2 bg-blue-500 p-0.5 w-4 h-4 rounded-full"></div>
+          <div className="sanitaire-container" style={{ overflowX: "hidden" }}>
+            {infoCards.map((card, index) => (
+              <div key={index} onClick={() => contactFunc(card.title)}>
+                <div className="item relative">
+                  {/* Blue Icon Circle on Left */}
+                  <div className="absolute left-8 top-8 transform -translate-x-1/2 -translate-y-1/2 bg-blue-500 p-0.5 w-4 h-4 rounded-full"></div>
 
-                {/* Image Section */}
-                <div className="item-sani relative mb-4 p-5 mt-10">
-                  <h3 className="text-2xl font-bold text-white mb-14 mt-12 text-center">
-                    {card.title}
-                  </h3>
-                  <div className="item-border-san image32">
-                    <img
-                      src={card.img}
-                      alt={card.title}
-                      className="w-full h-48 object-cover rounded-lg"
-                    />
+                  {/* Image Section */}
+                  <div className="item-sani relative mb-4 p-5 mt-10">
+                    <h3 className="text-2xl font-bold text-white mb-14 mt-12 text-center">
+                      {card.title}
+                    </h3>
+                    <div className="item-border-san image32">
+                      <img
+                        src={card.img}
+                        alt={card.title}
+                        className="w-full h-48 object-cover rounded-lg"
+                      />
+                    </div>
+                    <h4 className="text-xl font-semibold text-white mb-4 pl-5 pr-3 text-left">
+                      {card.title1}
+                    </h4>
+
+                    {/* Description */}
+                    <p className="text-white mb-10 p-5 text-left">
+                      {card.description}
+                    </p>
                   </div>
-                  <h4 className="text-xl font-semibold text-white mb-4 pl-5 pr-3 text-left">
-                    {card.title1}
-                  </h4>
 
-                  {/* Description */}
-                  <p className="text-white mb-10 p-5 text-left">
-                    {card.description}
-                  </p>
+                  {/* Title1 */}
                 </div>
-
-                {/* Title1 */}
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
         </section>
-
-
-
 
         <Contact val={val} />
       </section>

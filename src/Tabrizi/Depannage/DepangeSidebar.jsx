@@ -23,8 +23,7 @@ const DepSidebar = ({ isOpen, toggleSidebar }) => {
       <div className="flex flex-col items-center justify-center h-full space-y-12">
         <div
           className="flex flex-row items-center gap-4 cursor-pointer"
-          onClick={() => scrollToSection("home-dep")}
-        >
+          onClick={() => navigate("/")}        >
           <span className="text-lg">Accueil</span>
         </div>
         {/* <div

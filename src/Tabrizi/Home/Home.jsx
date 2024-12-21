@@ -109,7 +109,7 @@ const Home = () => {
                   <br />
                   pour un confort optimal en toute saison.
                 </p>
-                <button onClick={() => scrollToSection("contact")}>
+                <button onClick={() => scrollToSection("comma")}>
                   À propos de nous
                 </button>
               </div>

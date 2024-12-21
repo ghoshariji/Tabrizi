@@ -115,88 +115,166 @@ const Chauffage = () => {
             </div>
 
             <div className="background">
-            <div className="container">
-              <div className="md:mr-40">
-                <div className="relative">
-                  {/* Image */}
-                  <img
-                  className="title w-full object-cover h-auto hidden sm:block"
-                  src={Title_Home}
-                  alt="Titre"
-                />
-              
-                {/* Image for small screens */}
-                <img
-                  className="title w-full object-cover h-auto sm:hidden"
-                  src={Title_Home1}
-                  alt="Titre"
-                />
-                 {/**  <img
+              <div className="container">
+                <div className="md:mr-40">
+                  <div className="relative">
+                    {/* Image */}
+                    <img
+                      className="title w-full object-cover h-auto hidden sm:block"
+                      src={Title_Home}
+                      alt="Titre"
+                    />
+
+                    {/* Image for small screens */}
+                    <img
+                      className="title w-full object-cover h-auto sm:hidden"
+                      src={Title_Home1}
+                      alt="Titre"
+                    />
+                    {/**  <img
                   className="title w-full object-cover h-auto sm:hidden"
                   src={Title_Home1}
                   alt="Titre"
                 />*/}
-                  {/* Text overlay */}
-                  <div className="custom-margin absolute inset-0 flex flex-col items-center justify-center  bg-opacity-50 px-4 sm:mt-[50px] md:mt-[50px]">
-                  <h2 className="text-3xl sm:hidden text-white" style={{fontWeight:"500px", fontFamily:"Rubik"}}>CHAUFFAGE</h2>
-                  <div className="ml-10">
-                  <p className="text-black text-center text-xs sm:text-sm md:text-base lg:text-lg p-4 leading-normal sm:leading-relaxed sm:mt-5 ml-0 sm:ml-9">
-                  Découvrez nos solutions de chauffage écologiques avec des pompes à
-                  chaleur performantes pour une énergie verte et durable. Optimisez
-                  votre confort tout en réduisant votre empreinte carbone.
-                </p>
-                </div>
+                    {/* Text overlay */}
+                    <div className="custom-margin absolute inset-0 flex flex-col items-center justify-center  bg-opacity-50 px-4 sm:mt-[50px] md:mt-[50px]">
+                      <h2
+                        className="text-3xl sm:hidden text-white"
+                        style={{ fontWeight: "500px", fontFamily: "Rubik" }}
+                      >
+                        CHAUFFAGE
+                      </h2>
+                      <div className="ml-10">
+                        <p className="text-black text-center text-xs sm:text-sm md:text-base lg:text-lg p-4 leading-normal sm:leading-relaxed sm:mt-5 ml-0 sm:ml-9">
+                          Découvrez nos solutions de chauffage écologiques avec
+                          des pompes à chaleur performantes pour une énergie
+                          verte et durable. Optimisez votre confort tout en
+                          réduisant votre empreinte carbone.
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          
           </div>
 
           <section id="chhauffage-con">
             <div className="chauffage-container">
               <div
                 className="section"
-                onClick={() => contactFunc("ÉNERGIE VERTE")}
               >
                 <h2 className="mt-5">ÉNERGIE VERTE</h2>
 
                 <div className="item">
-                  <div className="item-border image1 mt-10">
+                  <div
+                    className="item-border image1 mt-10"
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      flexDirection: "column",
+                    }}
+                    onClick={() => contactFunc("Pompe à chaleur air/eau")}
+
+                  >
                     <img src={img1} />
-                    <p>Pompe à chaleur air/eau</p>
+                    <h3
+                      style={{
+                        fontWeight: 600,
+                        fontFamily: "Rubik, sans-serif",
+                        textAlign: "center",
+                      }}
+                    >
+                      Pompe à chaleur air/eau
+                    </h3>
                   </div>
                 </div>
 
                 <div className="item">
-                  <div className="item-border image2">
+                  <div
+                    className="item-border image2"
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      flexDirection: "column",
+                    }}
+                    onClick={() => contactFunc("Pompe à chaleur air/air")}
+
+                  >
                     <img src={img2} />
-                    <p>Pompe à chaleur air/air</p>
+                    <h3
+                      style={{
+                        fontWeight: 600,
+                        fontFamily: "Rubik, sans-serif",
+                        textAlign: "center",
+                      }}
+                    >
+                      Pompe à chaleur air/air
+                    </h3>
                   </div>
                 </div>
               </div>
 
               <div
                 className="section"
-                onClick={() => contactFunc("ÉNERGIE FOSSILE")}
               >
                 <h2 className="mt-5">ÉNERGIE FOSSILE</h2>
+
                 <div className="item">
-                  <div className="item-border image3 mt-10">
+                  <div
+                    className="item-border image3 mt-10"
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      flexDirection: "column",
+                    }}
+                    onClick={() => contactFunc("Chauffage à mazout")}
+
+                  >
                     <img src={img3} />
-                    <p>Chauffage à mazout</p>
+                    <h3
+                      style={{
+                        fontWeight: 600,
+                        fontFamily: "Rubik, sans-serif",
+                        textAlign: "center",
+                      }}
+                    >
+                      Chauffage à mazout
+                    </h3>
                   </div>
                 </div>
+
                 <div className="item">
-                  <div className="item-border image4">
+                  <div
+                    className="item-border image4"
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      flexDirection: "column",
+                    }}
+                    onClick={() => contactFunc("Chauffage à gaz")}
+
+                  >
                     <img src={img4} />
-                    <p>Chauffage à gaz</p>
+                    <h3
+                      style={{
+                        fontWeight: 600,
+                        fontFamily: "Rubik, sans-serif",
+                        textAlign: "center",
+                      }}
+                    >
+                      Chauffage à gaz
+                    </h3>
                   </div>
                 </div>
               </div>
             </div>
           </section>
+
           <Contact val={val} />
         </section>
       </>
@@ -205,4 +283,3 @@ const Chauffage = () => {
 };
 
 export default Chauffage;
-

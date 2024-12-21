@@ -19,11 +19,11 @@ const Header = () => {
   };
   const naviagte = useNavigate();
   return (
-    <header>
+    <header className="lg:border-r lg:border-b lg:border-white md:border-r md:border-b md:border-white border-0 p-0">
       <div className="container-logo">
-        <Link to="/">
+        {/* <Link to="/"> */}
           <img className="logo" src={Logo} alt="Logo de AG" />
-        </Link>
+        {/* </Link> */}
       </div>
 
       <div className={`container-header ${menuOpen ? "active" : ""}`}>
@@ -58,7 +58,7 @@ const Header = () => {
         <div>
           <ul className="container-navigation">
             <li>
-              <a href="#home" onClick={() => handleScroll("home")}>
+              <a href="#home" onClick={() => naviagte("/")}>
                 Accueil
               </a>
             </li>
