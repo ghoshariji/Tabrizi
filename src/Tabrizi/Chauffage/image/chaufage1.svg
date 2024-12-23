@@ -1,8 +1,8 @@
 <svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
   <!-- Vertical Line Left -->
-  <line x1="438" y1="5" x2="438" y2="75" stroke="red" stroke-width="12"/>
+  <line x1="439" y1="5" x2="438" y2="75" stroke="red" stroke-width="12"/>
   <!-- Vertical Line Right -->
-  <line x1="438" y1="790" x2="438" y2="750" stroke="red" stroke-width="12"/>
+  <line x1="439" y1="790" x2="438" y2="750" stroke="red" stroke-width="12"/>
   <!-- Horizontal Line Top -->
   <line x1="0" y1="6" x2="445" y2="6" stroke="red" stroke-width="12"/>
   <!-- Horizontal Line Bottom -->
