@@ -96,23 +96,37 @@ const Home = () => {
           <div className="background-img">
             <img src={Background} alt="Fond" />
           </div>
-          <div className="background">
-            <div className="container m-0 p-0">
-              <div>
-                <img className="title" src={Title_Home} alt="Titre" />
-                <p className="lg:text-left sm:text-center">
-                  AG Sanitaire vous accompagne dans tous vos projets,
-                  <br />
-                  en vous proposant des solutions de chauffage performantes,
-                  <br />
-                  économiques et parfaitement adaptées à vos besoins spécifiques
-                  <br />
-                  pour un confort optimal en toute saison.
-                </p>
-                <button onClick={() => scrollToSection("comma")}>
-                  À propos de nous
-                </button>
-              </div>
+
+          <div className="background relative w-full h-screen flex flex-col items-center justify-center">
+            <div className="relative w-full h-3/5 sm:h-4/5 lg:h-2/5 flex items-center justify-center px-4 lg:px-8">
+              <img
+                className="w-3/4 h-auto object-cover sm:w-2/3 sm:h-auto md:w-1/2 md:h-auto lg:w-1/3 lg:h-auto mx-auto"
+                src={Title_Home}
+                alt="Titre"
+              />
+              <h1 className="absolute inset-0 flex items-center justify-center text-white text-xl sm:text-4xl md:text-5xl lg:text-3xl font-semibold text-center px-4 lg:px-8">
+                CHAUFFAGE FIABLE,
+                <br />
+                CONFORT ASSURÉ
+              </h1>
+            </div>
+
+            <div className="text-center mt-6 px-4 lg:mt-4 lg:px-12">
+              <p className="text-sm sm:text-lg md:text-xl lg:text-base leading-relaxed text-white">
+                AG Sanitaire vous accompagne dans tous vos projets,
+                <br />
+                en vous proposant des solutions de chauffage performantes,
+                <br />
+                économiques et parfaitement adaptées à vos besoins spécifiques
+                <br />
+                pour un confort optimal en toute saison.
+              </p>
+              <button
+                onClick={() => scrollToSection("comma")}
+                className="mt-4 px-8 py-4 bg-red-500 hover:bg-red-600 text-white text-base sm:text-lg md:text-xl lg:text-lg "
+              >
+                À propos de nous
+              </button>
             </div>
           </div>
         </div>
