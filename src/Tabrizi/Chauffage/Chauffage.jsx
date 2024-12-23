@@ -122,22 +122,22 @@ const Chauffage = () => {
             <div className="absolute inset-0 flex items-center justify-center w-full sm:h-[150vh] md:h-[70vh] lg:h-[60vh] px-4 lg:px-12 lg:mt-20 z-10">
               <div className="relative w-full sm:w-[90%] md:w-[70%] lg:w-[60%] xl:w-[50%] mx-auto lg:my-8">
                 <img
-                  className="w-full sm:h-[70vh] md:h-auto lg:h-auto object-cover"
+                  className="w-full sm:h-[150vh] md:h-auto lg:h-auto object-cover"
                   src={Title_Home}
                   alt="Titre"
                 />
                 {/* Text over the image */}
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-4">
-                  <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-center">
+                  <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-center ml-[-150px]">
                     CHAUFFAGE
                   </h1>
                   <p className="text-xs sm:text-sm md:text-lg lg:text-lg text-center sm:px-6 lg:px-12 leading-relaxed">
-                    Découvrez nos solutions de chauffage écologiques
-                    <br className="hidden sm:block" /> avec des pompes à chaleur
-                    performantes
-                    <br /> pour une énergie verte et durable.
-                    <br className="hidden sm:block" /> Optimisez votre confort
-                    tout en réduisant votre empreinte carbone.
+                    Découvrez nos solutions de chauffage écologiques avec des
+                    pompes à chaleur performantes pour une énergie verte et
+                    durable.
+                    <br />
+                    Optimisez votre confort tout en réduisant votre empreinte
+                    carbone.
                   </p>
                 </div>
               </div>
