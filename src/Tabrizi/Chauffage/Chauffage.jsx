@@ -135,11 +135,11 @@ const Chauffage = () => {
 
                 {/* Text over the image */}
                 <div className="absolute inset-0 flex flex-col lg:items-center md:items-center justify-center text-white px-4">
-                  <h1 className="text-xl sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl font-semibold lg:text-center sm:text-[5px] md:text-[30px] lg:text-[40px] xl:text-[50px] lg:text-left lg:mt-4 xl:mt-5">
+                  <h1 className="text-xl sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl font-semibold lg:text-center sm:text-[5px] md:text-[30px] lg:text-[40px] xl:text-[50px] lg:text-left lg:mt-4 xl:mt-5 font-rubik">
                     CHAUFFAGE
                   </h1>
 
-                  <p className="text-xs sm:text-[2px] md:text-sm lg:text-lg text-left sm:px-6 lg:px-12 leading-relaxed w-full">
+                  <p className="text-xs sm:text-[2px] md:text-sm lg:text-lg text-left sm:px-6 lg:px-12 leading-relaxed w-full font-rubik">
                     Découvrez nos solutions de chauffage écologiques avec des
                     pompes à chaleur performantes pour une énergie verte et
                     durable.

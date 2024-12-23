@@ -19,7 +19,7 @@ const SanitaireHeader = () => {
     <header className="lg:border-r lg:border-b lg:border-white md:border-r md:border-b md:border-white border-0 p-0">
       <div className="container-logo">
         <Link to="/">
-        <img className="logo" src={Logo} alt="Logo de AG" />
+          <img className="logo" src={Logo} alt="Logo de AG" />
         </Link>
       </div>
 
@@ -53,38 +53,36 @@ const SanitaireHeader = () => {
         </div>
 
         <div>
-         <ul className="container-navigation">
-                    <li>
-                      <Link to="/" onClick={() => naviagte("/")}>
-                        Accueil
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/sanitaire" onClick={() => naviagte("/sanitaire")}>
-                        Sanitaire
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/chauffage" onClick={() => naviagte("/chauffage")}>
-                        Chauffage
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/depannage" onClick={() => naviagte("/depannage")}>
-                        Depannage
-                      </Link>
-                    </li>
-                    <li>
-                      <Link  onClick={() => handleScroll("contact")}>
-                      Contactez-nous
-                      </Link>
-                    </li>
-                    <li>
-                      <Link onClick={() => handleScroll("comma")}>
-                      A propos
-                      </Link>
-                    </li>
-                  </ul>
+          <ul className="container-navigation">
+            <li>
+              <Link to="/" onClick={() => naviagte("/")}>
+                Accueil
+              </Link>
+            </li>
+            <li>
+              <Link to="/sanitaire" onClick={() => naviagte("/sanitaire")}>
+                Sanitaire
+              </Link>
+            </li>
+            <li>
+              <Link to="/chauffage" onClick={() => naviagte("/chauffage")}>
+                Chauffage
+              </Link>
+            </li>
+            <li>
+              <Link to="/depannage" onClick={() => naviagte("/depannage")}>
+                Depannage
+              </Link>
+            </li>
+            <li>
+              <Link onClick={() => handleScroll("contact")}>
+                Contactez-nous
+              </Link>
+            </li>
+            <li>
+              <Link onClick={() => handleScroll("sanitaire")}>A propos</Link>
+            </li>
+          </ul>
         </div>
       </div>
     </header>

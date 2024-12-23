@@ -84,7 +84,7 @@ const DepangeHeader = () => {
               </Link>
             </li>
             <li>
-              <Link onClick={() => handleScroll("comma")}>A propos</Link>
+              <Link onClick={() => handleScroll("depange")}>A propos</Link>
             </li>
           </ul>
         </div>

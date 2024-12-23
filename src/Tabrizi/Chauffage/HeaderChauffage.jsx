@@ -84,7 +84,7 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link onClick={() => handleScroll("comma")}>A propos</Link>
+              <Link onClick={() => handleScroll("chhauffage-con")}>A propos</Link>
             </li>
           </ul>
         </div>
