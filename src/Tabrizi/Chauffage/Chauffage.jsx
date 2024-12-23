@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Background from "./image/background-Image.jpeg";
 import Title_Home from "./image/chaufage.svg";
+import Title_Hom from "./image/chaufage1.svg";
 import Title_Home1 from "./image1.png";
 import Title_Home2 from "./image.png";
 import Contact from "../Contact/Contact";
@@ -10,24 +11,14 @@ import img1 from "./image/image1.png";
 import img2 from "./image/image2.png";
 import img3 from "./image/image3.png";
 import img4 from "./image/image4.png";
-import { useNavigate } from "react-router-dom";
-import Sidebar from "../Sidebar.jsx";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
 import ChaSidebar from "./ChauSidebar.jsx";
 
 const Chauffage = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const navigate = useNavigate();
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
-  };
-
-  const scrollToSection = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
   };
 
   const [val, setVal] = useState("");
@@ -121,25 +112,34 @@ const Chauffage = () => {
             {/* Second div placed on top of the first div */}
             <div className="absolute inset-0 flex items-center justify-center w-full sm:h-[150vh] md:h-[70vh] lg:h-[60vh] px-4 lg:px-12 lg:mt-20 z-10">
               <div className="relative w-full sm:w-[80%] md:w-[85%] lg:w-[90%] xl:w-[55%] mx-auto lg:my-8">
+                {/* First Image (Visible on Large and Medium Screens) */}
                 <img
-                  className="w-full sm:h-[150vh] md:h-auto lg:h-auto object-cover"
+                  className="w-full sm:h-auto md:h-auto lg:h-auto object-cover hidden md:block mt-5" // Hide on small screens
                   src={Title_Home}
                   srcSet={`
-                  ${Title_Home} 1024w, 
-                  ${Title_Home1} 768w, 
-                  ${Title_Home2} 480w
-                `}
+      ${Title_Home} 1024w, 
+      ${Title_Home1} 768w, 
+      ${Title_Home2} 480w
+    `}
                   sizes="(min-width: 1024px) 90vw, 
-                       (min-width: 768px) 110vw, 
-                       (max-width: 767px) 130vw"
+           (min-width: 768px) 110vw, 
+           (max-width: 767px) 130vw"
                   alt="Titre"
                 />
+
+                {/* Second Image (Visible only on Small Screens) */}
+                <img
+                  className="w-full sm:h-auto md:h-auto lg:h-auto object-cover block md:hidden" // Hide on medium and large screens
+                  src={Title_Hom}
+                />
+
                 {/* Text over the image */}
-                <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-4">
-                  <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-center ml-[-150px]">
+                <div className="absolute inset-0 flex flex-col lg:items-center md:items-center justify-center text-white px-4">
+                  <h1 className="text-xl sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl font-semibold lg:text-center sm:text-[5px] md:text-[30px] lg:text-[40px] xl:text-[50px] lg:text-left">
                     CHAUFFAGE
                   </h1>
-                  <p className="text-xs sm:text-sm md:text-lg lg:text-lg text-center sm:px-6 lg:px-12 leading-relaxed">
+
+                  <p className="text-xs sm:text-[2px] md:text-sm lg:text-lg text-left sm:px-6 lg:px-12 leading-relaxed w-full">
                     Découvrez nos solutions de chauffage écologiques avec des
                     pompes à chaleur performantes pour une énergie verte et
                     durable.

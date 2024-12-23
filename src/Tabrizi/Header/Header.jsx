@@ -22,7 +22,7 @@ const Header = () => {
     <header className="lg:border-r lg:border-b lg:border-white md:border-r md:border-b md:border-white border-0 p-0">
       <div className="container-logo">
         <Link to="/">
-        <img className="logo" src={Logo} alt="Logo de AG" />
+          <img className="logo" src={Logo} alt="Logo de AG" />
         </Link>
       </div>
 
