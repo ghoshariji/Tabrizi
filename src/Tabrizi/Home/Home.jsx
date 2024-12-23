@@ -111,7 +111,7 @@ const Home = () => {
               </h1>
             </div>
 
-            <div className="text-center mt-6 px-4 lg:mt-4 lg:px-12">
+            <div className="text-center px-4 lg:px-12 sm:mt-4 md:mt-4 lg:mt-8 lg:mb-4 md:mb-4">
               <p className="text-sm sm:text-lg md:text-xl lg:text-base leading-relaxed text-white">
                 AG Sanitaire vous accompagne dans tous vos projets,
                 <br />
@@ -123,7 +123,7 @@ const Home = () => {
               </p>
               <button
                 onClick={() => scrollToSection("comma")}
-                className="mt-4 px-8 py-4 bg-red-500 hover:bg-red-600 text-white text-base sm:text-lg md:text-xl lg:text-lg "
+                className="mt-4 px-8 py-4 bg-red-600 hover:bg-red-600 text-white text-base sm:text-lg md:text-xl lg:text-lg"
               >
                 À propos de nous
               </button>
@@ -138,5 +138,3 @@ const Home = () => {
 };
 
 export default Home;
-
-
