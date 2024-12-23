@@ -120,10 +120,18 @@ const Chauffage = () => {
 
             {/* Second div placed on top of the first div */}
             <div className="absolute inset-0 flex items-center justify-center w-full sm:h-[150vh] md:h-[70vh] lg:h-[60vh] px-4 lg:px-12 lg:mt-20 z-10">
-              <div className="relative w-full sm:w-[90%] md:w-[70%] lg:w-[60%] xl:w-[50%] mx-auto lg:my-8">
+              <div className="relative w-full sm:w-[80%] md:w-[85%] lg:w-[90%] xl:w-[55%] mx-auto lg:my-8">
                 <img
                   className="w-full sm:h-[150vh] md:h-auto lg:h-auto object-cover"
                   src={Title_Home}
+                  srcSet={`
+                  ${Title_Home} 1024w, 
+                  ${Title_Home1} 768w, 
+                  ${Title_Home2} 480w
+                `}
+                  sizes="(min-width: 1024px) 90vw, 
+                       (min-width: 768px) 110vw, 
+                       (max-width: 767px) 130vw"
                   alt="Titre"
                 />
                 {/* Text over the image */}
