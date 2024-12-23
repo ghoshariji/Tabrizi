@@ -21,9 +21,9 @@ const Header = () => {
   return (
     <header className="lg:border-r lg:border-b lg:border-white md:border-r md:border-b md:border-white border-0 p-0">
       <div className="container-logo">
-        {/* <Link to="/"> */}
-          <img className="logo" src={Logo} alt="Logo de AG" />
-        {/* </Link> */}
+        <Link to="/">
+        <img className="logo" src={Logo} alt="Logo de AG" />
+        </Link>
       </div>
 
       <div className={`container-header ${menuOpen ? "active" : ""}`}>
@@ -58,24 +58,24 @@ const Header = () => {
         <div>
           <ul className="container-navigation">
             <li>
-              <a href="#home" onClick={() => naviagte("/")}>
+              <Link to="/" onClick={() => naviagte("/")}>
                 Accueil
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#info" onClick={() => naviagte("/sanitaire")}>
+              <Link to="/sanitaire" onClick={() => naviagte("/sanitaire")}>
                 Sanitaire
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#comma" onClick={() => naviagte("/chauffage")}>
+              <Link to="/chauffage" onClick={() => naviagte("/chauffage")}>
                 Chauffage
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#contact" onClick={() => naviagte("/depannage")}>
+              <Link to="/depannage" onClick={() => naviagte("/depannage")}>
                 Depannage
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

@@ -22,9 +22,9 @@ const Header = () => {
   return (
     <header className="lg:border-r lg:border-b lg:border-white md:border-r md:border-b md:border-white border-0 p-0">
       <div className="container-logo">
-        {/* <Link to="/"> */}
+        <Link to="/">
           <img className="logo" src={Logo} alt="Logo de AG" />
-        {/* </Link> */}
+        </Link>
       </div>
 
       <div className={`container-header ${menuOpen ? "active" : ""}`}>
@@ -57,28 +57,28 @@ const Header = () => {
         </div>
 
         <div>
-          <ul className="container-navigation">
-            <li>
-              <a href="#home"  onClick={() => naviagte("/")}>
-                Accueil
-              </a>
-            </li>
-            <li>
-              <a href="#info" onClick={() => naviagte("/sanitaire")}>
-                Sanitaire
-              </a>
-            </li>
-            <li>
-              <a href="#comma" onClick={() => naviagte("/chauffage")}>
-                Chauffage
-              </a>
-            </li>
-            <li>
-              <a href="#contact" onClick={() => naviagte("/depannage")}>
-                Depannage
-              </a>
-            </li>
-          </ul>
+             <ul className="container-navigation">
+                     <li>
+                       <Link to="/" onClick={() => naviagte("/")}>
+                         Accueil
+                       </Link>
+                     </li>
+                     <li>
+                       <Link to="/sanitaire" onClick={() => naviagte("/sanitaire")}>
+                         Sanitaire
+                       </Link>
+                     </li>
+                     <li>
+                       <Link to="/chauffage" onClick={() => naviagte("/chauffage")}>
+                         Chauffage
+                       </Link>
+                     </li>
+                     <li>
+                       <Link to="/depannage" onClick={() => naviagte("/depannage")}>
+                         Depannage
+                       </Link>
+                     </li>
+                   </ul>
         </div>
       </div>
     </header>
