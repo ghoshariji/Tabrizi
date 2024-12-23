@@ -57,28 +57,36 @@ const Header = () => {
         </div>
 
         <div>
-             <ul className="container-navigation">
-                     <li>
-                       <Link to="/" onClick={() => naviagte("/")}>
-                         Accueil
-                       </Link>
-                     </li>
-                     <li>
-                       <Link to="/sanitaire" onClick={() => naviagte("/sanitaire")}>
-                         Sanitaire
-                       </Link>
-                     </li>
-                     <li>
-                       <Link to="/chauffage" onClick={() => naviagte("/chauffage")}>
-                         Chauffage
-                       </Link>
-                     </li>
-                     <li>
-                       <Link to="/depannage" onClick={() => naviagte("/depannage")}>
-                         Depannage
-                       </Link>
-                     </li>
-                   </ul>
+          <ul className="container-navigation">
+            <li>
+              <Link to="/" onClick={() => naviagte("/")}>
+                Accueil
+              </Link>
+            </li>
+            <li>
+              <Link to="/sanitaire" onClick={() => naviagte("/sanitaire")}>
+                Sanitaire
+              </Link>
+            </li>
+            <li>
+              <Link to="/chauffage" onClick={() => naviagte("/chauffage")}>
+                Chauffage
+              </Link>
+            </li>
+            <li>
+              <Link to="/depannage" onClick={() => naviagte("/depannage")}>
+                Depannage
+              </Link>
+            </li>
+            <li>
+              <Link onClick={() => handleScroll("contact")}>
+                Contactez-nous
+              </Link>
+            </li>
+            <li>
+              <Link onClick={() => handleScroll("comma")}>A propos</Link>
+            </li>
+          </ul>
         </div>
       </div>
     </header>

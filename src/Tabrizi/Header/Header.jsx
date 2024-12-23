@@ -77,6 +77,16 @@ const Header = () => {
                 Depannage
               </Link>
             </li>
+            <li>
+              <Link  onClick={() => handleScroll("contact")}>
+              Contactez-nous
+              </Link>
+            </li>
+            <li>
+              <Link onClick={() => handleScroll("comma")}>
+              A propos
+              </Link>
+            </li>
           </ul>
         </div>
       </div>

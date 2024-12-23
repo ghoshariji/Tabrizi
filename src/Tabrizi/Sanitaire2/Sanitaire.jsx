@@ -6,7 +6,7 @@ import img1 from "./Image/image1.png";
 import img2 from "./Image/image2.png";
 import img3 from "./Image/image3.png";
 
-import "./Sanitaire2.css";
+import "./Sanitaire.css";
 import SanitaireHeader from "./SanitaireHeader";
 import { useNavigate } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
@@ -149,7 +149,7 @@ const Sanitaire = () => {
                     margin: "0",
                   }}
                 >
-                  DÉPANNAGE
+                  SANITAIRE
                 </h1>
               </div>
             </div>
