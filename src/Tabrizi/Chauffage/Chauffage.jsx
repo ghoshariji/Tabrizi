@@ -111,10 +111,10 @@ const Chauffage = () => {
 
             {/* Second div placed on top of the first div */}
             <div className="absolute inset-0 flex items-center justify-center w-full sm:h-[150vh] md:h-[70vh] lg:h-[60vh] px-4 lg:px-12 lg:mt-20 z-10">
-              <div className="relative w-full sm:w-[80%] md:w-[85%] lg:w-[90%] xl:w-[55%] mx-auto lg:my-8">
+              <div className="relative w-full sm:w-[80%] md:w-[85%] lg:w-[90%] xl:w-[55%] mx-auto lg:my-8 pt-4 md:mt-14 lg:mt-14">
                 {/* First Image (Visible on Large and Medium Screens) */}
                 <img
-                  className="w-full sm:h-auto md:h-auto lg:h-auto object-cover hidden md:block mt-5" // Hide on small screens
+                  className="w-full sm:h-auto md:h-auto lg:h-auto object-cover hidden md:block mt-5"
                   src={Title_Home}
                   srcSet={`
       ${Title_Home} 1024w, 
@@ -125,21 +125,31 @@ const Chauffage = () => {
            (min-width: 768px) 110vw, 
            (max-width: 767px) 130vw"
                   alt="Titre"
+                  style={{
+                    maxWidth: "1260px", // Limit the max width on larger screens
+                    width: "100%",
+                  }}
                 />
 
                 {/* Second Image (Visible only on Small Screens) */}
                 <img
-                  className="w-full sm:h-auto md:h-auto lg:h-auto object-cover block md:hidden" // Hide on medium and large screens
+                  className="w-full sm:h-auto md:h-auto lg:h-auto object-cover block md:hidden"
                   src={Title_Hom}
+                  alt="Small Screen Title"
+                  style={{
+                    width: "90%",
+                    maxWidth: "450px",
+                    marginBottom: 0, // Remove extra margin below the image
+                  }}
                 />
 
                 {/* Text over the image */}
                 <div className="absolute inset-0 flex flex-col lg:items-center md:items-center justify-center text-white px-4">
-                  <h1 className="text-xl sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl font-semibold lg:text-center sm:text-[5px] md:text-[30px] lg:text-[40px] xl:text-[50px] lg:text-left lg:mt-4 xl:mt-5">
+                  <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold lg:text-center sm:text-[18px] md:text-[30px] lg:text-[40px] xl:text-[50px] lg:text-left lg:mt-4 xl:mt-5 lg:mr-20 md:mr-20">
                     CHAUFFAGE
                   </h1>
 
-                  <p className="text-xs sm:text-[2px] md:text-sm lg:text-lg text-left sm:px-6 lg:px-12 leading-relaxed w-full font-rubik">
+                  <p className="text-xs sm:text-[12px] md:text-sm lg:text-lg text-left sm:px-6 lg:px-12 leading-relaxed w-full font-rubik">
                     Découvrez nos solutions de chauffage écologiques avec des
                     pompes à chaleur performantes pour une énergie verte et
                     durable.
