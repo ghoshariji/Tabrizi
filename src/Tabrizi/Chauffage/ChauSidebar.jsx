@@ -14,6 +14,21 @@ const ChaSidebar = ({ isOpen, toggleSidebar }) => {
     toggleSidebar(); // Close sidebar after scrolling
   };
 
+  const handleScroll1 = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleClick = () => {
+    // Navigate to the new page
+    navigate("/");
+
+    // After the page has loaded, scroll to the specific section
+    setTimeout(() => handleScroll1("comma"), 200); // 200ms delay for the page load
+  };
+
   return (
     <div
       className={`fixed top-0 right-0 h-full bg-black text-white w-64 transition-transform transform ${
@@ -23,7 +38,8 @@ const ChaSidebar = ({ isOpen, toggleSidebar }) => {
       <div className="flex flex-col items-center justify-center h-full space-y-12">
         <div
           className="flex flex-row items-center gap-4 cursor-pointer"
-          onClick={() => navigate("/")}        >
+          onClick={() => navigate("/")}
+        >
           <span className="text-lg">Accueil</span>
         </div>
         {/* <div
@@ -55,9 +71,9 @@ const ChaSidebar = ({ isOpen, toggleSidebar }) => {
         </div>
         <div
           className="flex flex-row items-center gap-4 cursor-pointer"
-          onClick={() => scrollToSection("chhauffage-con")}
+          onClick={handleClick}
         >
-          <span className="text-lg">À propos de nous</span>
+          <span className="text-lg">À propos</span>
         </div>
         <div
           className="flex flex-row items-center gap-4 cursor-pointer"

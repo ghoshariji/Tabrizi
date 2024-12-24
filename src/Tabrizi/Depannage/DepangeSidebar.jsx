@@ -13,7 +13,20 @@ const DepSidebar = ({ isOpen, toggleSidebar }) => {
     }
     toggleSidebar(); // Close sidebar after scrolling
   };
+  const handleScroll1 = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
+  const handleClick = () => {
+    // Navigate to the new page
+    navigate("/");
+
+    // After the page has loaded, scroll to the specific section
+    setTimeout(() => handleScroll1("comma"), 200); // 200ms delay for the page load
+  };
   return (
     <div
       className={`fixed top-0 right-0 h-full bg-black text-white w-64 transition-transform transform ${
@@ -55,9 +68,9 @@ const DepSidebar = ({ isOpen, toggleSidebar }) => {
         </div>
         <div
           className="flex flex-row items-center gap-4 cursor-pointer"
-          onClick={() => scrollToSection("depange")}
+          onClick={handleClick}
         >
-          <span className="text-lg">À propos de nous</span>
+          <span className="text-lg">À propos</span>
         </div>
         <div
           className="flex flex-row items-center gap-4 cursor-pointer"
