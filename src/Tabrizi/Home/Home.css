@@ -6,7 +6,14 @@
   position: relative;
   top: 5vh; /* Moves the whole section a bit down */
 }
+*{
+  font-family: "Rubik";
+}
 
+h1{
+  font-family: "Rubik";
+  font-weight: 500;
+}
 .home .background-img {
   width: 100%;
   height: 100%;

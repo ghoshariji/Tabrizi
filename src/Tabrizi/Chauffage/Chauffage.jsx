@@ -135,7 +135,7 @@ const Chauffage = () => {
 
                 {/* Text over the image */}
                 <div className="absolute inset-0 flex flex-col lg:items-center md:items-center justify-center text-white px-4">
-                  <h1 className="text-xl sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl font-semibold lg:text-center sm:text-[5px] md:text-[30px] lg:text-[40px] xl:text-[50px] lg:text-left lg:mt-4 xl:mt-5 font-rubik">
+                  <h1 className="text-xl sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl font-semibold lg:text-center sm:text-[5px] md:text-[30px] lg:text-[40px] xl:text-[50px] lg:text-left lg:mt-4 xl:mt-5">
                     CHAUFFAGE
                   </h1>
 

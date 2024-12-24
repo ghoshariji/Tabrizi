@@ -18,7 +18,20 @@ const DepangeHeader = () => {
     }
   };
   const naviagte = useNavigate();
+  const handleScroll1 = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
+  const handleClick = () => {
+    // Navigate to the new page
+    naviagte("/");
+
+    // After the page has loaded, scroll to the specific section
+    setTimeout(() => handleScroll1("comma"), 200); // 200ms delay for the page load
+  };
   return (
     <header className="lg:border-r lg:border-b lg:border-white md:border-r md:border-b md:border-white border-0 p-0">
       <div className="container-logo">
@@ -84,7 +97,7 @@ const DepangeHeader = () => {
               </Link>
             </li>
             <li>
-              <Link onClick={() => handleScroll("depange")}>A propos</Link>
+              <p className="text-white hover:cursor-pointer" onClick={handleClick}>A propos</p>
             </li>
           </ul>
         </div>

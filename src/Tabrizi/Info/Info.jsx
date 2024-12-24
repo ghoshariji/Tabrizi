@@ -38,14 +38,14 @@ const Info = () => {
       hoverColor: "#1e7e34",
       icon: Icon_Depannage,
       alt: "Icône du dépannage",
-      nav: "depange",
+      nav: "depannage",
     },
   ];
 
   const navigate = useNavigate();
   return (
     <>
-      <div className="info">
+      <div className="info ">
         <section id="info">
           {/* Service Boxes */}
           <div className="container-box flex flex-wrap justify-evenly items-center gap-6 px-4 sm:px-6 md:px-8">
