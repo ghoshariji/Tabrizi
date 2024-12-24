@@ -140,7 +140,7 @@ const Depange = () => {
             <div className="container" style={{ position: "relative" }}>
               <div>
                 <img
-                  className="title w-full h-auto sm:w-3/4 md:w-2/3"
+                  className="title w-full h-auto sm:w-3/4 md:w-2/3 mt-6"
                   src={Title_Home}
                   alt="Titre"
                 />

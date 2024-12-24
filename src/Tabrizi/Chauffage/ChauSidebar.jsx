@@ -60,26 +60,26 @@ const ChaSidebar = ({ isOpen, toggleSidebar }) => {
           className="flex flex-row items-center gap-4 cursor-pointer"
           onClick={() => navigate("/depannage")}
         >
-          <span className="text-lg">Depannage</span>
+          <span className="text-lg"> Chauffage</span>
         </div>
 
         <div
           className="flex flex-row items-center gap-4 cursor-pointer"
           onClick={() => navigate("/chauffage")}
         >
-          <span className="text-lg">Chauffage</span>
+          <span className="text-lg">Depannage</span>
         </div>
         <div
           className="flex flex-row items-center gap-4 cursor-pointer"
           onClick={handleClick}
         >
-          <span className="text-lg">À propos</span>
+          <span className="text-lg">Contactez-nous</span>
         </div>
         <div
           className="flex flex-row items-center gap-4 cursor-pointer"
           onClick={() => scrollToSection("contact")}
         >
-          <span className="text-lg">Contactez-nous</span>
+          <span className="text-lg">A propos</span>
         </div>
       </div>
     </div>

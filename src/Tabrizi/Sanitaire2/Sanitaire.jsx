@@ -139,12 +139,12 @@ const Sanitaire = () => {
             <div className="container">
               <div>
                 <img
-                  className="title w-full h-auto sm:w-3/4 md:w-2/3"
+                  className="title w-full h-auto sm:w-3/4 md:w-2/3 mt-5"
                   src={Title_Home1}
                   alt="Titre"
                 />
                 <h1
-                  className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl sm:text-5xl md:text-6xl font-sans text-center"
+                  className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl sm:text-5xl md:text-6xl font-sans text-center "
                   style={{
                     margin: "0",
                   }}
