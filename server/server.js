@@ -26,7 +26,7 @@ app.post("/api/contact", async (req, res) => {
 
     const mailOptions = {
       from: "arijitghosh1203@gmail.com",
-      to: "arijit1087.be22@chitkarauniversity.edu.in", // Replace with your recipient email
+      to: "sachinparmar98134@gmail.com", // Replace with your recipient email
       subject: "Nouveau message de contact",
       text: `Email: ${email}\nPhone: ${phone}\nMessage: ${message}`,
     };
