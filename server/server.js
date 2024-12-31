@@ -14,16 +14,19 @@ app.post("/api/contact", async (req, res) => {
 
   try {
     const transporter = nodemailer.createTransport({
-      service: "Gmail", // Or use a custom SMTP server
+      service: "gmail",
+      host: "smtp.gmail.com",
+      port: 465,
+      secure: true,
       auth: {
-        user: "your-email@gmail.com", // Replace with your email
-        pass: "your-email-password", // Replace with your email password or app password
+        user: "arijitghosh1203@gmail.com",
+        pass: "sbkz nlun jawd ykki", // Replace with your email password or app password
       },
     });
 
     const mailOptions = {
-      from: "your-email@gmail.com",
-      to: "recipient-email@gmail.com", // Replace with your recipient email
+      from: "arijitghosh1203@gmail.com",
+      to: "arijit1087.be22@chitkarauniversity.edu.in", // Replace with your recipient email
       subject: "Nouveau message de contact",
       text: `Email: ${email}\nPhone: ${phone}\nMessage: ${message}`,
     };
