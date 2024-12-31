@@ -32,7 +32,7 @@ const Contact = ({ val }) => {
     setLoading(true); // Start loading
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/contact",
+        "https://tabrizi.onrender.com/api/contact",
         formData
       );
       if (response.data.success) {
